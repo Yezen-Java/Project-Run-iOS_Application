@@ -59,8 +59,8 @@
 				$(function() {
 
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
-       	var result = data;
-    		      if(data == result){
+       	var ture = 'true';
+    		      if(var.match(data)){
     		      	//tourId=myText;
     		      		show('Page2');
 
