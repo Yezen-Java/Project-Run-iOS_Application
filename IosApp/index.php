@@ -59,14 +59,14 @@
 				$(function() {
 
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
-    		      if(data.exists){
+    		      if(data>0){
     		      	//tourId=myText;
     		      	show('Page2');
 
     			    }else{
     			    	alert(data)
    					 }
- 				}'JSON');
+ 				});
        return false;
   });
 
