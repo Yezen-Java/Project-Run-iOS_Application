@@ -56,7 +56,7 @@
 			function moveToNextPage(){
 		
 				var myText = document.getElementById("tourText").value;
-
+				alert(myText);
 				$.post('database/TourIdValidation.php',{TourId:myText}, function(data){
 					alert(data);
     		      if(data.exists){
