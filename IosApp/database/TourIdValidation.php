@@ -5,6 +5,8 @@ include 'Connect.php';
 
 $tourId = $_POST['TourId'];
 
+echo $tourId;
+
 $query = "SELECT * From tour where tourid = $1";
 
 $result = pg_prepare($dbconn,"Tour_query", $query);
