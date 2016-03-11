@@ -15,7 +15,7 @@ $escaped = pg_escape_string($tourId);
 $result = pg_execute($dbconn, "Tour_query", array($escaped));
 
 
-if ($result) {
+
 	if(pg_num_rows($result)>0){
 
 		$rows = pg_fetch_array($result);
@@ -32,11 +32,7 @@ if ($result) {
 	}else{
 		echo "Invalid Code";
 	}
-}else{
-			echo "QueryFaild";
 
-
-}
 
 
 

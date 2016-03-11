@@ -52,7 +52,7 @@
                 element.style.display = 'block';
             }
 	
-	var tourId ='';
+	//var tourId ='';
 			function moveToNextPage(){
 		
 				var myText = document.getElementById("tourText").value;
@@ -61,7 +61,7 @@
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
        		alert(data);
     		      if(data.exists){
-    		      	tourId=myText;
+    		      	//tourId=myText;
     		      	show('Page2');
 
     			    }else{
