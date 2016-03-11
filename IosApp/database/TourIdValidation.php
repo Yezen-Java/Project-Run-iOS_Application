@@ -21,7 +21,7 @@ $result = pg_execute($dbconn, "Tour_query", array($escaped));
 		$rows = pg_fetch_array($result);
 		$tourIdPg = $rows['tourId'];
 		if($tourId === $tourIdPg){
-			echo json_encode(array('exists' => $tourId));
+		echo "success";			
 
 		}else{
 			echo "Invalid Code";
