@@ -59,7 +59,7 @@
 				$(function() {
 
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
-    		      if(data == "true"){
+    		      if(data != ''){
     		      	//tourId=myText;
     		      		show('Page2');
 
