@@ -57,7 +57,7 @@
 		
 				var myText = document.getElementById("tourText").value;
 
-				$.post('database/TourIdValidation.php',{TourID:myText}, function(data){
+				$.post('database/TourIdValidation.php',{TourId:myText}, function(data){
     		      if(data.exists){
     		      	tourId=myText;
     		      	show('Page2');
