@@ -12,7 +12,7 @@ $result = pg_prepare($dbconn,"Tour_query", $query);
 $escaped = pg_escape_string($tourId);
 
 
-$result = pg_execute($dbconn, "Tour_query", array($escaped));
+$result = pg_execute($dbconn, "Tour_query", array($tourId));
 
 
 
