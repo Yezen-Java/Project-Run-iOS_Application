@@ -56,9 +56,10 @@
 			function moveToNextPage(){
 		
 				var myText = document.getElementById("tourText").value;
-				alert(myText);
-				$.post('database/TourIdValidation.php',{TourId:myText}, function(data){
-					alert(data);
+				$(function() {
+
+       $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
+       		alert(data);
     		      if(data.exists){
     		      	tourId=myText;
     		      	show('Page2');
@@ -67,6 +68,10 @@
     			    	alert(data)
    					 }
  				}, 'JSON');
+       return false;
+  });
+
+
 		
 					// if(myText=="1234"){
 					// 	show('Page2')
