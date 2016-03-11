@@ -22,10 +22,7 @@ $result = pg_execute($dbconn, "Tour_query", array($tourId));
 
 
 
-	}else{
-		echo "Invalid Code";
 	}
-
 
 
 
