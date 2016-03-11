@@ -63,20 +63,21 @@
     		      	show('Page2');
 
     			    }else{
+    			    	alert(data)
    					 }
  				}, 'JSON');
 		
-					if(myText=="1234"){
-						show('Page2')
-					}
-					//		else if(myText===null){
-					//			
-					//		}
+					// if(myText=="1234"){
+					// 	show('Page2')
+					// }
+					// //		else if(myText===null){
+					// //			
+					// //		}
 
-					else
-						{
-						alert(myText + "  is the wrong Tour Code");
-						}
+					// else
+					// 	{
+					// 	alert(myText + "  is the wrong Tour Code");
+					// 	}
 	}
 
 
