@@ -22,8 +22,8 @@ if (pg_num_rows($result)>0) {
 
 	while($rows=pg_fetch_array($result)){
 
-		$name = $row['lname'];
-		
+		$name = $rows['lname'];
+
 		echo "<div class='span2'>
 			 
           <button onclick='show('Page3');' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block' >
