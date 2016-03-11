@@ -52,10 +52,19 @@
                 element.style.display = 'block';
             }
 	
-	
+	var tourId ='';
 			function moveToNextPage(){
 		
 				var myText = document.getElementById("tourText").value;
+
+				$.post('database/TourIdValidation.php',{TourID:myText}, function(data){
+    		      if(data.exists){
+    		      	tourId=myText;
+    		      	show('Page2');
+
+    			    }else{
+   					 }
+ 				}, 'JSON');
 		
 					if(myText=="1234"){
 						show('Page2')
@@ -69,6 +78,16 @@
 						alert(myText + "  is the wrong Tour Code");
 						}
 	}
+
+
+			function getDataForTour(){
+
+               $.post( "result.php",{TourID:tourId},function(data) {
+                     $('#stage').html(data);
+                  }
+               );
+
+			}
  
 </script>
 	  
