@@ -64,6 +64,7 @@
     			    }else{
     			      tourId=myText;
     			   	  show('Page2');
+    			   	  getDataForTour();
 
    					 }
  				});
