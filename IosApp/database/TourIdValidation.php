@@ -18,11 +18,8 @@ $result = pg_execute($dbconn, "Tour_query", array($tourId));
 		$rows = pg_fetch_array($result);
 		$tourIdPg = $rows['tourId'];
 		//echo json_encode(array('exists' => pg_num_rows($result)> 0));
-		echo 1;	
-
-
-
-	}
+		echo "true";	
+}
 
 
 
