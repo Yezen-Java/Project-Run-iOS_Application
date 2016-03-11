@@ -30,9 +30,11 @@ if ($result) {
 
 
 	}else{
-
+		echo "Invalid Code";
 	}
 }else{
+			echo "QueryFaild";
+
 
 }
 
