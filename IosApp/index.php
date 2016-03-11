@@ -52,44 +52,29 @@
                 element.style.display = 'block';
             }
 	
-	//var tourId ='';
+	var tourId ='';
 			function moveToNextPage(){
 		
 				var myText = document.getElementById("tourText").value;
 				$(function() {
 
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
-    		      if(data != ''){
-    		      	//tourId=myText;
-    		      		show('Page2');
-
+    		      if(data ==''){
+    		      	alert("worng code");
     			    }else{
-    			    	alert(data)
+    			      tourId=myText;
+    			   	  show('Page2');
+
    					 }
  				});
        return false;
   });
 
-
-		
-					// if(myText=="1234"){
-					// 	show('Page2')
-					// }
-					// //		else if(myText===null){
-					// //			
-					// //		}
-
-					// else
-					// 	{
-					// 	alert(myText + "  is the wrong Tour Code");
-					// 	}
 	}
-
-
 			function getDataForTour(){
 
-               $.post( "result.php",{TourID:tourId},function(data) {
-                     $('#stage').html(data);
+               $.post( "database/GetTourData.php",{TourID:tourId},function(data) {
+                     $('#justTheYellowButtons').html(data);
                   }
                );
 
@@ -198,7 +183,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <div class="insideBodyButtons">
 	<div class="container-fluid">
     	<div class="row-fluid">
-      		<div class="justTheYellowButtons">
+      		<div id="justTheYellowButtons" class="justTheYellowButtons">
 			<center class="SelectARoomText">Select a room</center>	
          <div class="span2">
 			 
