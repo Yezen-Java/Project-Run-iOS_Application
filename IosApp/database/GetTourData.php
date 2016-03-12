@@ -4,11 +4,12 @@ include 'Connect.php';
 
 
 $tourId = $_POST['TourID'];
+$functionName = $_POST['functionName'];
 $query = "SELECT * from tour_res, location where tour_res.tourid = $1 and tour_res.locationid = location.locationid;";
 $result = pg_prepare($dbconn,"TourData_query", $query);
 
 
-if ($_POST['functionName'] === 'GetTourLocationDiv' ) {
+if ( $functionName === "GetTourLocationDiv") {
 	# code...
 	GetTourLocationDiv();
 }
