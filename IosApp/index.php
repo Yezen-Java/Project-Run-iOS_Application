@@ -59,7 +59,7 @@
 				$(function() {
 					var functionName = "GetTourLocationDiv";
 
-       $.post('database/TourIdValidation.php',{TourId:myText, functionName:functionName}, function(data){
+       $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
     		      if(data ==''){
     		      	alert("worng code");
     			    }else{
@@ -75,7 +75,7 @@
 	}
 			function getDataForTour(){
 
-               $.post( "database/GetTourData.php",{TourID:tourId},function(data) {
+               $.post( "database/GetTourData.php",{TourID:tourId,functionName:functionName},function(data) {
                      $('#justTheYellowButtons').html(data);
                      getLocationJson();
                   }
