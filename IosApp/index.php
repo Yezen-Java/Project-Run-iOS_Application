@@ -57,8 +57,6 @@
 		
 				var myText = document.getElementById("tourText").value;
 				$(function() {
-					var functionName = "GetTourLocationDiv";
-
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
     		      if(data ==''){
     		      	alert("worng code");
@@ -74,7 +72,7 @@
 
 	}
 			function getDataForTour(){
-
+				var functionName = "GetTourLocationDiv";
                $.post( "database/GetTourData.php",{TourID:tourId,functionName:functionName},function(data) {
                      $('#justTheYellowButtons').html(data);
                      getLocationJson();
