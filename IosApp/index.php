@@ -57,8 +57,9 @@
 		
 				var myText = document.getElementById("tourText").value;
 				$(function() {
+					var functionName = "GetTourLocationDiv";
 
-       $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
+       $.post('database/TourIdValidation.php',{TourId:myText, functionName:}, function(data){
     		      if(data ==''){
     		      	alert("worng code");
     			    }else{
@@ -79,6 +80,17 @@
                   }
                );
 
+			}
+
+
+			function getLocationJson(){
+				var functionName = "getTourLocationJson";
+
+				$.getJSON('http://anotheraddress.com/messages.php', { functionName: escape(functionName)}, function(data) {
+
+					console.log(data);
+
+				});
 			}
 
 
