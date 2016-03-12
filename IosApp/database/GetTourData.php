@@ -7,7 +7,6 @@ $tourId = $_POST['TourID'];
 $query = "SELECT * from tour_res, location where tour_res.tourid = $1 and tour_res.locationid = location.locationid;";
 $result = pg_prepare($dbconn,"TourData_query", $query);
 
-GetTourLocationDiv();
 
 function GetTourLocationDiv(){
 $escaped = pg_escape_string($tourId);
@@ -27,6 +26,7 @@ if (pg_num_rows($result)>0) {
 }
 
 
+GetTourLocationDiv();
 
 
  ?>
