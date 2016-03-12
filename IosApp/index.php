@@ -58,14 +58,10 @@
 				var myText = document.getElementById("tourText").value;
 				$(function() {
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
-    		      if(data ==''){
-    		      	alert("worng code");
-    			    }else{
-    			      tourId=myText;
+    		    
+    			     tourId=myText;
     			   	  show('Page2');
     			   	  getDataForTour();
-
-   					 }
  				});
        return false;
   });
