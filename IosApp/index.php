@@ -68,12 +68,16 @@
 
 	}
 			function getDataForTour(){
-				
-               $.post( "database/GetTourData.php",{TourID:tourId},function(data) {
-                     $('#justTheYellowButtons').html(data);
-                     getLocationJson();
-                  }
-               );
+
+
+				$(function() {
+       $.post("database/GetTourData.php",{TourId:myText}, function(data){
+    		    
+    			   getLocationJson();
+ 				});
+       return false;
+  });
+
 
 			}
 
