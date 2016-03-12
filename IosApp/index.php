@@ -72,7 +72,7 @@
 
 	}
 			function getDataForTour(){
-				var functionName = "GetTourLocationDiv";
+				var functionName = 'GetTourLocationDiv';
                $.post( "database/GetTourData.php",{TourID:tourId,functionName:functionName},function(data) {
                      $('#justTheYellowButtons').html(data);
                      getLocationJson();
