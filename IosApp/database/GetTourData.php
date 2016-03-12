@@ -8,7 +8,7 @@ $query = "SELECT * from tour_res, location where tour_res.tourid = $1 and tour_r
 $result = pg_prepare($dbconn,"TourData_query", $query);
 
 
-if ($_POST['functionName'] === "GetTourLocationDiv" ) {
+if ($_POST['functionName'] === 'GetTourLocationDiv' ) {
 	# code...
 	GetTourLocationDiv();
 }
@@ -32,7 +32,7 @@ if (pg_num_rows($result)>0) {
 
 
 
-if($GET['functionName'] === "getTourLocationJson" ){
+if($GET['functionName1'] === 'getTourLocationJson' ){
 
 getTourLocationJson();
 }

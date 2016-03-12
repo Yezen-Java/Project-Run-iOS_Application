@@ -85,7 +85,7 @@
 			function getLocationJson(){
 				var functionName = "getTourLocationJson";
 
-				$.getJSON('/database/GetTourData.php', { functionName: escape(functionName)}, function(data) {
+				$.getJSON('/database/GetTourData.php', { functionName1: escape(functionName)}, function(data) {
 
 					console.log(data);
 
