@@ -9,7 +9,7 @@ $result = pg_prepare($dbconn,"TourData_query", $query);
 
 
 $escaped = pg_escape_string($getTourId);
-$result = pg_execute($dbconn, "TourData_query", array('TOR124'));
+$result = pg_execute($dbconn, "TourData_query", array("TOR124"));
 $myArray = array();
 while ($rows = pg_fetch_array($result)) {
 	//set up the nested associative arrays using literal array notation
