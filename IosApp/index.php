@@ -73,7 +73,7 @@
 	}
 			function getDataForTour(){
 				var functionName = 'GetTourLocationDiv';
-               $.post( "database/GetTourData.php",{TourID:tourId,functionName:functionName},function(data) {
+               $.post( "database/GetTourData.php",{TourID:tourId},function(data) {
                      $('#justTheYellowButtons').html(data);
                      getLocationJson();
                   }
@@ -83,9 +83,8 @@
 
 
 			function getLocationJson(){
-				var functionName = "getTourLocationJson";
 
-				$.getJSON('/database/GetTourData.php', { functionName1: escape(functionName)}, function(data) {
+				$.getJSON('/database/GetLocationJson.php', { TourId: escape(tourId)}, function(data) {
 
 					console.log(data);
 
