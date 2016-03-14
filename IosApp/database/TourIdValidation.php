@@ -11,7 +11,7 @@ $result = pg_prepare($dbconn,"Tour_query", $query);
 
 $result = pg_execute($dbconn, "Tour_query", array($tourId));
 
-
+echo getBoolean();
 
 
 function getBoolean(){
