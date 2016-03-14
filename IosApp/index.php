@@ -59,9 +59,12 @@
 				$(function() {
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
     		    
+    		    if (data.equals(true)) {
+
     			     tourId=myText;
     			   	  show('Page2');
     			   	  getDataForTour();
+    			   	}
  				});
        return false;
   });

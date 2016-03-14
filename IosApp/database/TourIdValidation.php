@@ -13,14 +13,21 @@ $result = pg_execute($dbconn, "Tour_query", array($tourId));
 
 
 
+
+function getBoolean(){
+	global $result;
+
 	if(pg_num_rows($result)>0){
 
 		$rows = pg_fetch_array($result);
 		$tourIdPg = $rows['tourId'];
-		//echo json_encode(array('exists' => pg_num_rows($result)> 0));
-		echo "true";	
+
+		return true;
+			
 }
 
+return false;
 
+}
 
 ?>
