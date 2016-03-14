@@ -58,6 +58,8 @@
 				var myText = document.getElementById("tourText").value;
 				$(function() {
        $.post('database/TourIdValidation.php',{TourId:myText}, function(data){
+
+       	console.log(data);
     		    
     		    if (data == true) {
 
