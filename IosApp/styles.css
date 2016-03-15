@@ -1,8 +1,9 @@
 
 .topHeader {
+	position: fixed;
 	background-color: darkslateblue;
 	height: 60px;
-
+	max-width: 100%;
 	border-bottom:1px solid #a89e9e;
 }
 
