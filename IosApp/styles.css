@@ -42,7 +42,8 @@
 
 .body {
 
-background-image: url(images/backgroundImages/niceGreyBackground.jpg);
+/*background-image: url(images/backgroundImages/niceGreyBackground.jpg);*/
+	background-color: #a59696;
 /*	//background-color:black;*/
 	 width: 100%;
   position: absolute;
