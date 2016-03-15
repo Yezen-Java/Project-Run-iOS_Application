@@ -2,9 +2,8 @@
 .topHeader {
 	background-color: darkslateblue;
 	height: 60px;
-	widows: 100px;
-	border-style: hidden;
-	border-bottom-color: yellow;
+
+	border-bottom:1px solid #a89e9e;
 }
 
 .glyphicon{
@@ -16,7 +15,7 @@
 .span2 p{
 	
 
-	 text-decoration: underline;
+
 	text-decoration-color: ghostwhite;
 	
 	
@@ -41,9 +40,13 @@
 }
 
 .body {
-
-background-image: url(images/backgroundImages/niceGreyBackground.jpg);
+	background: url(images/backgroundImages/checkeredimage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 /*	//background-color:black;*/
+  font-size: 2vw;
 	
 }
 
@@ -161,7 +164,18 @@ font-size:  2.9vw;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	 box-shadow: 3px 3px 2px #000;
+	transition: all .2s ease-in-out;
 	
+}
+.galleryPictures:hover {
+	resize: both;
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	 box-shadow: 3px 3px 2px #000;
+	 transform: scale(1.1);
 }
 
 .galleryPicturesRight {
