@@ -41,8 +41,13 @@
 }
 
 .body {
-background-image: url(images/backgroundImages/niceGreyBackground.jpg);*/
+
+background-image: url(images/backgroundImages/niceGreyBackground.jpg);
 /*	//background-color:black;*/
+	 width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .imageButtons {
