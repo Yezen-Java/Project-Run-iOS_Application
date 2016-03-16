@@ -35,7 +35,7 @@
 <script>        
             $( document ).ready(function() {
 
-            	 $("AlertDiv").hide();
+            	 $("#AlertDiv").hide();
 
             });
             // show the given page, hide the rest
@@ -72,7 +72,7 @@
     			   	  show('Page2');
     			   	  getDataForTour();
     			   	}else{
-    			   	$("AlertDiv").show();
+    			   	$("#AlertDiv").show();
     			   	}
  				});
        return false;
@@ -161,7 +161,7 @@
 								<input type="text" class="form-control" id="tourText">
 						<button type="button" class="btn btn-success"  onclick="moveToNextPage()">Enter</button>
 						  <div id="AlertDiv" class="alert alert-danger">
-                          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.</div>
+                          <strong>Alert!</strong>Invalid Tour Code</div>
     				</div>
   				</form>
 			</div>
