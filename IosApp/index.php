@@ -33,8 +33,10 @@
         </style>
 	  
 <script>        
-            
-            	 $("#AlertDiv").hide();
+            $( document ).ready(function() {
+
+            	$("#AlertDiv").addClass("hidden");
+        });
             // show the given page, hide the rest
             function show(elementID) {
                 // try to find the requested page and alert if it's not found
@@ -69,7 +71,8 @@
     			   	  show('Page2');
     			   	  getDataForTour();
     			   	}else{
-    			   	$("#AlertDiv").show();
+    			   	$("#AlertDiv").removeClass("hidden");
+
     			   	}
  				});
        return false;
