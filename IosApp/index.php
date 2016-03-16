@@ -32,7 +32,12 @@
 					}
         </style>
 	  
-<script>
+<script>        
+            $( document ).ready(function() {
+
+            	 $("AlertDiv").hide();
+
+            });
             // show the given page, hide the rest
             function show(elementID) {
                 // try to find the requested page and alert if it's not found
@@ -66,6 +71,8 @@
     			     tourId=myText;
     			   	  show('Page2');
     			   	  getDataForTour();
+    			   	}else{
+    			   	$("AlertDiv").show();
     			   	}
  				});
        return false;
@@ -153,6 +160,8 @@
       					 <center class="centeredEnterTourCodeText"><label class="userNameText" for="usr">Enter Tour Code</label></center>
 								<input type="text" class="form-control" id="tourText">
 						<button type="button" class="btn btn-success"  onclick="moveToNextPage()">Enter</button>
+						  <div id="AlertDiv" class="alert alert-danger">
+                          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.</div>
     				</div>
   				</form>
 			</div>
