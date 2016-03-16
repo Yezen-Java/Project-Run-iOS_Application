@@ -33,11 +33,8 @@
         </style>
 	  
 <script>        
-            $( document ).ready(function() {
-
+            
             	 $("#AlertDiv").hide();
-
-            });
             // show the given page, hide the rest
             function show(elementID) {
                 // try to find the requested page and alert if it's not found
