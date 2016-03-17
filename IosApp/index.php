@@ -136,7 +136,7 @@
 		
 			  <div class="topHeader">
    
-	<center class="topHeader"><label class="topHospitalNameText" >Royal Brompton Hospital</label></center>
+	<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
 
 
       </div>
@@ -157,7 +157,7 @@
    
     				<div class="form-group">
 					
-      					 <center class="centeredEnterTourCodeText"><label class="userNameText" for="usr">Enter Tour Code</label></center>
+      					 <center class="centeredEnterTourCodeText"><label class="userNameText" for="usr"><p class="enterTourCodeButton">Enter Tour Code</p></label></center>
 								<input type="text" class="form-control" id="tourText">
 						<button type="button" class="btn btn-success"  onclick="moveToNextPage()">Enter</button>
 						  <div id="AlertDiv" class="alert alert-danger">
@@ -190,7 +190,7 @@
 		
   <div class="topHeader">
    
-	<center class="topHeader"><label class="topHospitalNameText" >Royal Brompton Hospital</label></center>
+	<center class="topHeader"><label class="topHospitalNameText" >Tour Activity</label></center>
 
       </div>
 	  
@@ -398,96 +398,3 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
   </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TEST STUFF ===============================================================================================
-	  
-	  		<!--		dynamic button for website start-->
-<!--
-<div class="input_fields_wrap">
-    <button class="add_field_button">Add More Locations</button>
-    <div><input type="text" name="mytext[]"></div>
-</div>		
--->
-		  
-		  
-<!--
-		 <div>
-		   <a><button class="circleButtonX">X</button></a>
-		  
-		  <p>Abdi</p>
-		  </div>
--->
-
-<!--		dynamic button for website end-->
-
-<!--
-
-	$(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
-    var add_button      = $(".add_field_button"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-    })
-});	
--->
-
-
-<!--
-		<button onclick="show('Page2')" class="btnEnter">Enter</button>
-				<button onclick="moveToNextPage()" class="btnEnter">Enter</button>
--->
-
-TEST STUFF END=========================================================================================
