@@ -48,7 +48,7 @@ border-bottom:1px solid white;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-/*	//background-color:black;*/
+
   font-size: 2vw;
 	
 }
@@ -105,24 +105,14 @@ border-bottom:1px solid white;
 }
 
 
-
-
-
-
-
 .span2 {
 	margin-top: 20px;
-	
-	
+
 }
-
-
 
 .pageButtons {
     box-shadow: 3px 2px 2px #000;
 	height: 120px;
-	
-
 
 }
 
@@ -165,7 +155,7 @@ font-size:  2.9vw;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 10px;
-	 box-shadow: 3px 3px 2px #000;
+	box-shadow: 3px 3px 2px #000;
 	transition: all .2s ease-in-out;
 	
 }
@@ -177,7 +167,7 @@ font-size:  2.9vw;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	 box-shadow: 3px 3px 2px #000;
-	 transform: scale(1.5);
+	 transform: scale(1.2);
 }
 
 .galleryPicturesRight {
@@ -210,9 +200,7 @@ font-size:  2.9vw;
 }
 
 .listOfPictures {
-	
 	margin-bottom: 60px;
-
 }
 
 .galleryTopText {
@@ -221,13 +209,11 @@ font-size: 30px;
 }
 
 .mainGalleryBackground {
-/*	background-image: url(images/backgroundImages/darkGreyWoodenBackgroud.png);*/
 	margin-left: -40px;
 }
 
 .insideBodyButtons {
-/*	background-image: url(images/backgroundImages/darkGreyWoodenBackgroud.png);*/
-	
+
 	margin-top: 1px;
 	
 
