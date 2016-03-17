@@ -1,12 +1,11 @@
 
 .topHeader {
 
-	background-color: darkslateblue;
+	background-color: #3A539B;
 	width: 100%;
 	height: 100%;
 
-
-	border-bottom:1px solid #a89e9e;
+border-bottom:1px solid white;
 }
 
 .glyphicon{
@@ -120,7 +119,6 @@
 
 
 .pageButtons {
-	background-color: #f5e145;
     box-shadow: 3px 2px 2px #000;
 	height: 120px;
 	
@@ -236,10 +234,8 @@ font-size: 30px;
 }
 
 .firstPageMainArea {
-/*	background-image: url(images/backgroundImages/metalicBlackBackground.jpg);*/
-	height: 200px;
+height: 200px;
 	margin-top: 200px;
-	background-image: url(images/backgroundImages/niceGreyBackground.jpg) ;
 	border-radius: 1%;
 	margin-left: 50px;
 	margin-right: 50px;
