@@ -42,8 +42,8 @@ border-bottom:1px solid white;
 }
 
 .body {
-	background-color: black;
-	background: url(images/backgroundImages/checkeredimage.jpg) repeat center center fixed; 
+
+	background-color: lightgrey;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
