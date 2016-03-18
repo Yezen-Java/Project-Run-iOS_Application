@@ -19,7 +19,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><button><img class="imageButtons" img-block src="images/mriMachine.jpg" width="600px" align="left" ><p class="imgTextTop" align="left">Cardia</button><a href="gallery.html" class="remove_field">X</a></div>'); //add input box
+            $(wrapper).append('<div class="testAbdi"><button><img class="imageButtons" img-block src="images/mriMachine.jpg" width="600px" align="left" ><p class="imgTextTop" align="left">Cardia</button><a href="gallery.html" class="remove_field">X</a></div>'); //add input box
         }
     });
     
@@ -28,6 +28,13 @@ $(document).ready(function() {
     })
 });
 
+
+
+
+$('.imageButtons').on('touchmove',function(e){
+    if(!$('.testAbdi').has($(e.target)).length)
+        e.preventDefault();
+});
 
 //Test code =====>>>>>>>>> start
 //$(document).bind(
