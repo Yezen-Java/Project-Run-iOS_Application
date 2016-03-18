@@ -25,9 +25,11 @@ border-bottom:1px solid white;
 
 
 
-html, body {
+html,
+body {
   height: 100%;
-  overflow: hidden;
+  width: 100%;
+  overflow: auto;
 }
 
 .topText {
