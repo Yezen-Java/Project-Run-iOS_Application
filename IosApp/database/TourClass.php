@@ -37,7 +37,7 @@ class TourClass
                     $result2 = pg_execute($dbconn,"locationImagesQuery",array($id));
                     $rowtwo =pg_fetch_array($result2);
                     $imageSrc = $rowtwo['link'];
-                    
+
 					$htmlTage = $htmlTage."<div class='span2'>
 			          <button onclick=\"show('Page3');\" value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
 			      		<span ><img class='imageButtons' img-block src='$imageSrc' width='600px' align='left' ><p class='imgTextTop' align='left'>$name</p><p align='left' class='imgBottomText' >North Wing</p>
@@ -48,6 +48,39 @@ class TourClass
 			}
 
 			return $htmlTage;
+	}
+
+
+
+	public function getTourMedia($locationid, $dbconn){
+		$htmlTag='';
+
+		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image'";
+			$result = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedia);
+			$result = pg_execute($dbconn,"locationImagesQuery",array($id));
+			$tag = '';
+			$close = '';
+
+			while($rows=pg_fetch_array($result)){
+			$link = $rows['link'];
+			$inBucketName = $rows['ext_name'];
+            $imageFormates = array("jpg", "png", "gif", "bmp","jpeg","PNG","JPG","JPEG","GIF");
+            $ext = explode(".",$inBucketName);
+
+				if (in_array($ext, $imageFormates)) {
+				$Tag = "<img class='img-responsive'";
+			    $Close = ">";
+			      
+			    }else{
+			      $Tag = "<video controls> <source";
+			    $Close = "></video>";
+			    }
+
+
+			    $htmlTag = $htmlTag."<a href='images/NuclearMedicine.jpg' title='Nuclear Medicine' data-gallery>
+			$Tag src='images/NuclearMedicine.jpg' alt='Orange' class='galleryPictures' $close</a>";
+
+         }
 	}
 	
 

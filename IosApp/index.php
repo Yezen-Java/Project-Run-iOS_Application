@@ -339,23 +339,10 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 	<ul class="listOfPictures">
 	
 	
-	<div class="mainGalleryBackground">
+	<div id "ImageGalleryDiv" class="mainGalleryBackground">
 		<center class="galleryTopText">Picture Gallery</center>
-			
-		<a  href="images/NuclearMedicine.jpg" title="Nuclear Medicine" data-gallery>
-			<img src="images/NuclearMedicine.jpg" alt="Orange" class="galleryPictures"></a>	
-		<a  href="images/stethoscope.jpg" title="Stethoscope" data-gallery>
-			<img src="images/mriMachine.jpg" alt="Orange" class="galleryPictures"></a>	 
-		<a  href="images/nulearMedgood.jpg" title="New nuclear machine" data-gallery>
-			<img src="images/nulearMedgood.jpg" alt="Orange" class="galleryPictures"></a>
-		<a  href="images/doctors.jpg" title="Doctors" data-gallery>
-			<img src="images/doctors.jpg" alt="Orange" class="galleryPictures"></a>
-		<a  href="images/newMriPicture.jpg" title="Using an MRI" data-gallery>
-			<img src="images/newMriPicture.jpg" alt="Orange" class="galleryPictures"></a>
-		<a  href="images/hospitalPic.jpg" title="Hospital" data-gallery>
-			<img src="images/hospitalPic.jpg" alt="Orange" class="galleryPictures"></a>
-		<a  href="images/stethoscope.jpg" title="Stethoscope" data-gallery>
-        	<img src="images/stethoscope.jpg" alt="Orange" class="galleryPictures"></a>
+
+
 		
 		</div>	  
 	</ul>	
