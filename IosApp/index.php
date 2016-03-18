@@ -273,8 +273,11 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		//Gallery page 
 		
 <!--		start of gallery page -->
-		<button onclick="show('Page1');">Take me to First page</button>
 	
+	<button id="btnHomePage" onclick="show('Page1');" href="add.html"  class="btn btn-success"><span class="glyphicon glyphicon-home"></span><p>HomePage</p></button>
+		
+	<button id="btnHelp"  class="btn btn-success"><span class="glyphicon glyphicon glyphicon-question-sign"></span><p>Help</p></button>
+		
 <!--		end of gallery page -->
 		
     </div>

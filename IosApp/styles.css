@@ -290,3 +290,18 @@ height: 200px;
 .enterTourCodeButton {
 	color: black;
 }
+
+
+
+#btnHomePage {
+	width: 120px;
+	height: 120px;
+	margin-left: 40px;
+}
+
+#btnHelp {
+	width: 120px;
+	height: 120px;
+	margin-left: 10px;
+	background-color: orange;
+}
