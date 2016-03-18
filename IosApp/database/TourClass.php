@@ -57,7 +57,7 @@ class TourClass
 
 		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image'";
 			$result = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedia);
-			$result = pg_execute($dbconn,"locationImagesQuery",array($id));
+			$result = pg_execute($dbconn,"locationImagesQuery",array($locationid));
 			$tag = '';
 			$close = '';
 
