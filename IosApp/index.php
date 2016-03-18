@@ -92,14 +92,7 @@
 
  
 }
-			function getLocationJson(){
-
-				$.getJSON('/database/GetLocationJson.php', { TourId: escape(tourId)}, function(data) {
-
-					console.log(data);
-
-				});
-			}
+		
 
 
 			function getMediaTour(value){
@@ -107,7 +100,8 @@
 				var LocationID = value;
 				console.log(value);
 		        $.post('database/GetTourMedia.php',{LocationID:LocationID}, function(data){
-    		    $('#ImageGalleryDiv').append(data);
+		        	console.log(data);
+    		    $('#listOfMedia').append(data);
     		    show('Page3');
 
  				});
@@ -349,11 +343,13 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!-- populating the pictures here  -->
 <center>
 	
-	<ul class="listOfPictures">
+	<ul id= "listOfMedia" class="listOfPictures">
 	
 	
 	<div id "ImageGalleryDiv" class="mainGalleryBackground">
 		<center class="galleryTopText">Picture Gallery</center>
+		<a  href="images/stethoscope.jpg" title="Stethoscope" data-gallery>
+        	<img src="images/stethoscope.jpg" alt="Orange" class="galleryPictures"></a>
 
 
 		
@@ -365,7 +361,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!--		generic home button for navigating back		   -->
 	<div class="span2">
           <a style="text-decoration: none" class="pageButtons  btn-default btn-lg btn-block">
-      		<span  onclick="show('Page1');"><img class="imageButtons" img-block src="images/home.png" width="600px" align="left" ><p class="imgTextTop" align="left">Home</p><p align="left" class="imgBottomText">Go back</p>
+      		<span  onclick="show('Page2');"><img class="imageButtons" img-block src="images/home.png" width="600px" align="left" ><p class="imgTextTop" align="left">Home</p><p align="left" class="imgBottomText">Go back</p>
 			</span> 
 		  </a>
 	</div>

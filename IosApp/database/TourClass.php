@@ -55,7 +55,7 @@ class TourClass
 	public function getTourMedia($locationid, $dbconn){
 		$htmlTag='';
 
-		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image'";
+		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid";
 			$result = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedia);
 			$result = pg_execute($dbconn,"locationImagesQuery",array($locationid));
 			$tag = '';
@@ -76,8 +76,8 @@ class TourClass
 			    $Close = "></video>";
 			    }
 
-			    $htmlTag = $htmlTag."<a title='Nuclear Medicine' data-gallery>
-			$Tag src='$link' alt='Orange' class='galleryPictures' $close</a>";
+			 $htmlTag = $htmlTag."<a title='Nuclear Medicine' data-gallery>
+			$Tag src='$link' alt='Orange' class='galleryPictures'$close</a>";
 
          }
 
