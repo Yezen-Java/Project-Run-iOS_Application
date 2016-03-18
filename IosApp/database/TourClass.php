@@ -77,7 +77,7 @@ class TourClass
 			    }
 
 			    $htmlTag = $htmlTag."<a href='images/NuclearMedicine.jpg' title='Nuclear Medicine' data-gallery>
-			$Tag src='images/NuclearMedicine.jpg' alt='Orange' class='galleryPictures' $close</a>";
+			$Tag src='$link' alt='Orange' class='galleryPictures' $close</a>";
 
          }
 
