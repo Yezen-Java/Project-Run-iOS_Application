@@ -64,6 +64,7 @@ class TourClass
 			while($rows=pg_fetch_array($result)){
 			$link = $rows['link'];
 			$inBucketName = $rows['ext_name'];
+			$description = $rows['description'];
             $imageFormates = array("jpg", "png", "gif", "bmp","jpeg","PNG","JPG","JPEG","GIF");
             $ext = explode(".",$inBucketName);
 
@@ -77,9 +78,8 @@ class TourClass
 			    }
 
 			 $htmlTag = $htmlTag."<div id ='ImageGalleryDiv' class='mainGalleryBackground'>
-				<center class='galleryTopText'>Picture Gallery</center>
-				<a  href='images/stethoscope.jpg' title='Stethoscope' data-gallery>
-        		<img src='images/stethoscope.jpg' alt='Orange' class='galleryPictures'></a></div>";
+				<a  href='$link' title='$description' data-gallery>
+        		<img src='$link' alt='Orange' class='galleryPictures'></a></div>";
 
          }
 

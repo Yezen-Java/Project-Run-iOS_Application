@@ -344,12 +344,8 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <center>
 	
 	<ul id= "listOfMedia" class="listOfPictures">
-	
-	
-	<div id "ImageGalleryDiv" class="mainGalleryBackground">
 		<center class="galleryTopText">Picture Gallery</center>
-		<a  href="images/stethoscope.jpg" title="Stethoscope" data-gallery>
-        	<img src="images/stethoscope.jpg" alt="Orange" class="galleryPictures"></a>
+	
 
 
 		
