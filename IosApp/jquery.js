@@ -30,9 +30,9 @@ $(document).ready(function() {
 
 
 //Test code =====>>>>>>>>> start
-document.addEventListener("touchmove", function(event){
+document.ontouchmove = function(event){
     event.preventDefault();
-});
+}
 });
 //................................Test code end 
 //
