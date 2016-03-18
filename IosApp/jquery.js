@@ -30,12 +30,12 @@ $(document).ready(function() {
 
 
 //Test code =====>>>>>>>>> start
-$(document).bind(
-      'touchmove',
-          function(e) {
-            e.preventDefault();
-          }
-);
+//$(document).bind(
+//      'touchmove',
+//          function(e) {
+//            e.preventDefault();
+//          }
+//);
 
 //................................Test code end 
 //

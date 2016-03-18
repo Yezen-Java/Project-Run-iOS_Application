@@ -24,6 +24,12 @@ border-bottom:1px solid white;
 }
 
 
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 .topText {
 
 	color: white;
