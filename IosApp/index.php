@@ -101,7 +101,7 @@
 				console.log(value);
 		        $.post('database/GetTourMedia.php',{LocationID:LocationID}, function(data){
 		        	console.log(data);
-    		    $('#listOfMedia').append(data);
+    		    $('#listOfMedia').html(data);
     		    show('Page3');
 
  				});
