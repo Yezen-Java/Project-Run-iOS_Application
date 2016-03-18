@@ -40,7 +40,7 @@ document.addEventListener('touchstart',function(e) {
 document.addEventListener('touchmove',function(e) {
     var xMovement = Math.abs(e.touches[0].screenX - xStart);
     var yMovement = Math.abs(e.touches[0].screenY - yStart);
-    if((yMovement * 3) > xMovement) {
+    if((yMovement * 2) > xMovement) {
         e.preventDefault();
     }
 });
