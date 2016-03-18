@@ -67,7 +67,6 @@ class TourClass
 			$description = $rows['description'];
             $imageFormates = array("jpg", "png", "gif", "bmp","jpeg","PNG","JPG","JPEG","GIF");
             $ext = explode(".",$inBucketName);
-
 				if (in_array($ext[1], $imageFormates)) {
 				$Tag = "<img class='img-responsive'";
 			    $Close = ">";
@@ -76,7 +75,9 @@ class TourClass
 			      $Tag = "<video controls> <source";
 			    $Close = "></video>";
 			    }
-
+			    //This where the php return the html code with the data from the database, 
+			    //the description are in the $desdription variable, you need to display that description 
+			    //when the user click and expand specific pic
 			 $htmlTag = $htmlTag."<div id ='ImageGalleryDiv' class='mainGalleryBackground'>
 				<a  href='$link' title='$description' data-gallery>
         		<img src='$link' alt='Orange' class='galleryPictures'></a></div>";
