@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 
 
-addEventListener('touchmove', function(e) { e.preventDefault(); }, true);
+//addEventListener('touchmove', function(e) { e.preventDefault(); }, true);
 
 //Test code =====>>>>>>>>> start
 //$(document).bind(
