@@ -76,8 +76,10 @@ class TourClass
 			    $Close = "></video>";
 			    }
 
-			 $htmlTag = $htmlTag."<a title='Nuclear Medicine' data-gallery>
-			$Tag src='$link' alt='Orange' class='galleryPictures'$close</a>";
+			 $htmlTag = $htmlTag."<div id ='ImageGalleryDiv' class='mainGalleryBackground'>
+				<center class='galleryTopText'>Picture Gallery</center>
+				<a  href='images/stethoscope.jpg' title='Stethoscope' data-gallery>
+        		<img src='images/stethoscope.jpg' alt='Orange' class='galleryPictures'></a></div>";
 
          }
 
