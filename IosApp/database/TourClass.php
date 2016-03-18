@@ -24,7 +24,7 @@ class TourClass
 	public function getTourLocation($tourId,$dbconn){
 		$htmlTage = '';
 		$query = "SELECT * from tour_res, location where tour_res.tourid = $1 and tour_res.locationid = location.locationid;";
-		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image'";
+		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image' LIMIT 1";
 
 			$result = pg_prepare($dbconn,"TourData_query", $query);
 			$result2 = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedi);
@@ -32,12 +32,9 @@ class TourClass
 			$result = pg_execute($dbconn, "TourData_query", array($escaped));
 			if (pg_num_rows($result)>0) {
 				while($rows=pg_fetch_array($result)){
-
 					$name = $rows['lname'];
 					$id = $rows['locationid'];
-                    
-                    $result2 = pg_execute($dbconn,"TourData_query",array($id));
-
+                    $result2 = pg_execute($dbconn,"locationImagesQuery",array($id));
                     $rowtwo =pg_fetch_array($result2);
                     $imageSrc = $rowtwo['link'];
 					$htmlTage = $htmlTage."<div class='span2'>
