@@ -104,9 +104,10 @@
 
 			function getMediaTour(value){
 
-		        $.post('database/GetTourData.php',{LocationID:value}, function(data){
+				var LocationID = value;
+				console.log(value);
+		        $.post('database/GetTourMedia.php',{LocationID:LocationID}, function(data){
     		    $('#ImageGalleryDiv').append(data);
-
     		    show('Page3');
 
  				});
