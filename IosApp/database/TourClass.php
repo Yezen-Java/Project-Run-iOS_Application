@@ -39,7 +39,7 @@ class TourClass
                     $imageSrc = $rowtwo['link'];
 
 					$htmlTage = $htmlTage."<div class='span2'>
-			          <button onclick=\"show('Page3');\" value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
+			          <button onclick=\"getMediaTour(this.value)\" value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
 			      		<span ><img class='imageButtons' img-block src='$imageSrc' width='600px' align='left' ><p class='imgTextTop' align='left'>$name</p><p align='left' class='imgBottomText' >North Wing</p>
 						    </span> 
 					      </button> 
@@ -76,11 +76,12 @@ class TourClass
 			    $Close = "></video>";
 			    }
 
-
 			    $htmlTag = $htmlTag."<a href='images/NuclearMedicine.jpg' title='Nuclear Medicine' data-gallery>
 			$Tag src='images/NuclearMedicine.jpg' alt='Orange' class='galleryPictures' $close</a>";
 
          }
+
+        return $htmlTag;
 	}
 	
 

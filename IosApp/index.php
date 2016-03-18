@@ -102,6 +102,18 @@
 			}
 
 
+			function getMediaTour(value){
+
+		        $.post('database/GetTourData.php',{LocationID:value}, function(data){
+    		    $('#ImageGalleryDiv').append(data);
+
+    		    show('Page3');
+
+ 				});
+
+			}
+
+
 			
 </script>
 	  
