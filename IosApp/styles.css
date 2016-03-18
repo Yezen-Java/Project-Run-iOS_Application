@@ -1,7 +1,4 @@
-html {
-    height  : 100%;
-    overflow: hidden;
-}
+
 .topHeader {
 
 	background-color: #3A539B;
@@ -54,7 +51,7 @@ font-size: 10px;
 
 .body {
 height  : 100%;
-    overflow: auto;
+    overflow: hidden;
 	background-color: lightgrey;
   -webkit-background-size: cover;
   -moz-background-size: cover;
