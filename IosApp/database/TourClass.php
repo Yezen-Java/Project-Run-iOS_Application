@@ -27,7 +27,7 @@ class TourClass
 		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image' LIMIT 1";
 
 			$result = pg_prepare($dbconn,"TourData_query", $query);
-			$result2 = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedi);
+			$result2 = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedia);
 			$escaped = pg_escape_string($tourId);
 			$result = pg_execute($dbconn, "TourData_query", array($escaped));
 			if (pg_num_rows($result)>0) {
@@ -37,6 +37,7 @@ class TourClass
                     $result2 = pg_execute($dbconn,"locationImagesQuery",array($id));
                     $rowtwo =pg_fetch_array($result2);
                     $imageSrc = $rowtwo['link'];
+                    
 					$htmlTage = $htmlTage."<div class='span2'>
 			          <button onclick=\"show('Page3');\" value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
 			      		<span ><img class='imageButtons' img-block src='$imageSrc' width='600px' align='left' ><p class='imgTextTop' align='left'>$name</p><p align='left' class='imgBottomText' >North Wing</p>
