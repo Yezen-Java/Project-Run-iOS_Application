@@ -1,4 +1,7 @@
-
+html {
+    height  : 100%;
+    overflow: hidden;
+}
 .topHeader {
 
 	background-color: #3A539B;
@@ -25,13 +28,7 @@ border-bottom:1px solid white;
 
 
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-	  font-size: 2vw;
-}
+
 
 .topText {
 
@@ -55,7 +52,18 @@ font-size: 10px;
 	
 }
 
+.body {
+height  : 100%;
+    overflow: auto;
+	background-color: lightgrey;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
+  font-size: 2vw;
+	
+}
 
 .imageButtons {
 	width: 120px;
