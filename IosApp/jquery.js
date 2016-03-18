@@ -30,10 +30,13 @@ $(document).ready(function() {
 
 
 //Test code =====>>>>>>>>> start
-document.ontouchmove = function(event){
-    event.preventDefault();
-}
-});
+$(document).bind(
+      'touchmove',
+          function(e) {
+            e.preventDefault();
+          }
+);
+
 //................................Test code end 
 //
 //     <div class="span2">
