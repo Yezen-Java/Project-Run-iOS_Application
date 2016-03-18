@@ -2,32 +2,15 @@
 <?php
 
 include 'Connect.php'; 
+include 'TourClass.php';
+
 
 $tourId = $_POST['TourId'];
 
-$query = "SELECT * From tour where tourid = $1";
+$tour = new TourClass();
 
-$result = pg_prepare($dbconn,"Tour_query", $query);
-
-$result = pg_execute($dbconn, "Tour_query", array($tourId));
-
-echo getBoolean();
+echo $tour->ValidateTourCode($tourId,$dbconn);
 
 
-function getBoolean(){
-	global $result;
-
-	if(pg_num_rows($result)>0){
-
-		$rows = pg_fetch_array($result);
-		$tourIdPg = $rows['tourId'];
-
-		return true;
-			
-}
-
-return false;
-
-}
 
 ?>
