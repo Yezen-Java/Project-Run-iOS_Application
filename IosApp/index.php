@@ -52,6 +52,7 @@
 			}
 
 			function showPosition(position) {
+			console.log(coTour.length);
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
 			    console.log(coTour[i]);
