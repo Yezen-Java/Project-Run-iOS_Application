@@ -60,7 +60,7 @@
 			    var clang = position.coords.longitude;
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    console.log(distance);
-			    if (distance < Math.pow(0.00008, 2)){
+			    if (distance < 0.00008){
 			    	console.log("Works");
 			    	alert('Works');
 			    }
