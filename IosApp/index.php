@@ -41,7 +41,7 @@
 				}, 5000);
         	});
 
-        	var coTour;
+        	var coTour = null;
 
         	function getLocation() {
 			    if (navigator.geolocation) {
@@ -91,8 +91,7 @@
     			    tourId=myText;
     			    getDataForTour();
     			   	show('Page2');
-    			   	coTour = getJson(tourId);
-    				console.log(coTour);
+    			   	getJson(tourId);
     		
     			   	  
     			   	}else{
@@ -135,7 +134,9 @@
 			function getJson(value){
 
 			$.post('database/GetLocationJson.php',{TourId:value}, function(data){
-    		return JSON.parse(data);
+    		
+    		coTour = JSON.parse(data);
+    		console.log(coTour);
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
        //      $.each(result, function(i, field){
