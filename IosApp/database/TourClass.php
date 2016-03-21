@@ -83,6 +83,22 @@ class TourClass
 
         return $htmlTag;
 	}
+
+
+	public function getLocationObjects($tourid,$dbconn){
+		$query = "SELECT DISTINCT ON (location.locationid) * from usertour, tour_res, location_res, location, media where usertour.tourid = $1 and usertour.tourid = tour_res.tourid and tour_res.locationid = location_res.locationid and location_res.username = usertour.username and location_res.locationid = location.locationid and location_res.mediaid = media.mediaid;";
+		$result = pg_prepare($dbconn,"TourData_query", $query);
+		$result = pg_execute($dbconn, "TourData_query", array($tourid));
+		$myArray = array();
+		while ($rows = pg_fetch_array($result)) {
+			//set up the nested associative arrays using literal array notation
+			$firstArray = array("id" => $rows['locationid'], "latitude" => $rows['latitude'], "logitude"=> $rows['logitude']);
+			//push items onto main array with bracket notation (this will result in numbered indexes)
+			$myArray[] = $secondArray;
+		}
+		 $json = json_encode($myArray);
+		return $json;
+	}
 	
 
 }

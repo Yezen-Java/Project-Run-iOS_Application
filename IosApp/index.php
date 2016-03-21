@@ -85,6 +85,7 @@
 
     			     tourId=myText;
     			   	  show('Page2');
+    			   	  getJson(tourId);
     			   	  getDataForTour();
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
@@ -100,7 +101,6 @@
        $.post('database/GetTourData.php',{TourId:tourId}, function(data){
     		 $('#justTheYellowButtons').html(data);
 
-    			   getLocationJson();
  				});
        return false;
  
@@ -123,6 +123,19 @@
  				});
 
 			}
+
+			function getJson(value){
+
+				$.post('database/getLocationJson.php',{TourId:value}, function(data){
+    		 $('#justTheYellowButtons').html(data);
+    		 console.log(data);
+ 				});
+			    // $.getJSON("/database/getLocationJson.php", function(result){
+       //      $.each(result, function(i, field){
+       //          $("div").append(field + " ");
+       //      });
+       //  });
+	}
 
 
 			
