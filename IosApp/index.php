@@ -42,7 +42,7 @@
 				}, 5000);
         	});
 
-        	var coordinates = [];
+        	var coordinates = null;
 
         	function getLocation() {
 			    if (navigator.geolocation) {
@@ -53,6 +53,7 @@
 			}
 
 			function showPosition(position) {
+				console.log(coordinates);
 				for (var i = 0; i < coordinates.length; i++) {
 					console.log(coordinates[i]);
 				};
