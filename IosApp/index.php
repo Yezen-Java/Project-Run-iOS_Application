@@ -52,7 +52,7 @@
 			}
 
 			function showPosition(position) {
-			console.log(coTour[0]);
+			console.log(coTour);
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
 			    console.log(coTour[i]);
@@ -142,7 +142,7 @@
 			function getJson(value){
 
 			$.post('database/GetLocationJson.php',{TourId:value}, function(data){
-    		
+    		console.log(data);
     		coTour = JSON.parse(data);
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
