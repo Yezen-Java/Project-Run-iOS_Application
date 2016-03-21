@@ -59,10 +59,9 @@
 			    var clat= position.coords.latitude;
 			    var clang = position.coords.longitude;
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
-			    console.log(distance);
 			    if (distance < 0.00008){
 			    	console.log("Works");
-			    	alert('Works');
+			    	$('test123').text("Works");
 			    }
 			}
 			}
@@ -240,7 +239,7 @@
 		
   <div class="topHeader">
    
-	<center class="topHeader"><label class="topHospitalNameText" >Tour Activity</label></center>
+	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label></center>
 
       </div>
 	  
