@@ -80,8 +80,8 @@ font-size: 10px;
 .mainGalleryBackground{
 	margin-top: 20px;
 	margin-bottom: 10px;
-	width: 200%;
-	height: 200%;
+	width: 200p;
+	height: 200px;
 	 box-shadow: 2px 2px 2px black;
 }
 
