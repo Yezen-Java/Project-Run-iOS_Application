@@ -57,14 +57,20 @@ font-size: 10px;
 
 /*abdi image gallery*/
 #ImageGalleryDiv{
-
-	background-color: black;
 	
 }
 
+.img-responsive{
+	
+	width: 200px;
+	height: 200px;
+}
+
+/*the gallery pictures can be set here */
 .mainGalleryBackground{
-	width: 400px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
+	 box-shadow: 1px 1px 1px black;
 }
 
 
