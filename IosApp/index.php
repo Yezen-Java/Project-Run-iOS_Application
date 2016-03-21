@@ -327,7 +327,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		
 <!--		start of gallery page -->
 	
-	<button id="btnHomePage" onclick="show('Page1');" href="add.html"  class="btn btn-success"><span class="glyphicon glyphicon-home"></span><p class="HomePageText">HomePage</p></button>
+	<button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
 		
 	
 		
