@@ -92,6 +92,7 @@
     			     tourId=myText;
     			   	  show('Page2');
     			   	  coordinates = getJson(tourId);
+    			   	  JSON.parse(coordinates);
     			   	  getDataForTour();
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
@@ -134,8 +135,6 @@
 
 				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
     		 $('#justTheYellowButtons').html(data);
-    		 console.log(data);
-    		 JSON.parse(data);
     		 return data;
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
