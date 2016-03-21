@@ -38,7 +38,7 @@ class TourClass
 
 					$htmlTage = $htmlTage."<div class='span2'>
 			          <button onclick='getMediaTour($id);' value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
-			      		<span ><img class='imageButtons' img-block src='$imageSrc' width='60px' align='left' ><p class='imgTextTop' align='left'>$name</p><p align='left' class='imgBottomText' >North Wing</p>
+			      		<span ><img class='imageButtons' img-block src='$imageSrc' width='600px' align='left' ><p class='imgTextTop' align='left'>$name</p><p align='left' class='imgBottomText' >North Wing</p>
 						    </span> 
 					      </button> 
 					    </div>";
