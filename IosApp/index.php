@@ -99,7 +99,7 @@
 
 				var LocationID = value;
 				console.log(value);
-		        $.post('database/GetTourMedia.php',{LocationID:LocationID}, function(data){
+		        $.post('database/GetTourMedia.php',{TourId:tourId,LocationID:LocationID}, function(data){
 		        	console.log(data);
     		    $('#listOfMedia').html(data);
     		    show('Page3');

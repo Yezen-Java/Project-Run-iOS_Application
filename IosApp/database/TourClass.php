@@ -23,19 +23,17 @@ class TourClass
 
 	public function getTourLocation($tourId,$dbconn){
 		$htmlTage = '';
-		$query = "SELECT * from tour_res, location where tour_res.tourid = $1 and tour_res.locationid = location.locationid;";
-		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid and media.media_type = 'image' LIMIT 1";
+		$query = "SELECT DISTINCT ON (location.locationid) * from usertour, tour_res, location_res, location, media where usertour.tourid = $1 and usertour.tourid = tour_res.tourid and tour_res.locationid = location_res.locationid and location_res.username = usertour.username and location_res.locationid = location.locationid and location_res.mediaid = media.mediaid; ";
 
 			$result = pg_prepare($dbconn,"TourData_query", $query);
 			$result2 = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedia);
 			$escaped = pg_escape_string($tourId);
 			$result = pg_execute($dbconn, "TourData_query", array($escaped));
+			
 			if (pg_num_rows($result)>0) {
 				while($rows=pg_fetch_array($result)){
 					$name = $rows['lname'];
 					$id = $rows['locationid'];
-                    $result2 = pg_execute($dbconn,"locationImagesQuery",array($id));
-                    $rowtwo =pg_fetch_array($result2);
                     $imageSrc = $rowtwo['link'];
 
 					$htmlTage = $htmlTage."<div class='span2'>
@@ -46,18 +44,17 @@ class TourClass
 					    </div>";
 				}
 			}
-
 			return $htmlTage;
 	}
 
 
 
-	public function getTourMedia($locationid, $dbconn){
+	public function getTourMedia($tourid,$locationid, $dbconn){
 		$htmlTag='';
 
-		$queryLocationMedia = "SELECT * from location_res, media where location_res.locationid = $1 and location_res.mediaid = media.mediaid";
+		$queryLocationMedia = "SELECT * from usertour, tour_res, location_res, media where usertour.tourid =$1 and usertour.tourid = tour_res.tourid and tour_res.locationid = location_res.locationid and location_res.mediaid = media.mediaid and location_res.username = usertour.username and location_res.locationid = $2;";
 			$result = pg_prepare($dbconn,"locationImagesQuery",$queryLocationMedia);
-			$result = pg_execute($dbconn,"locationImagesQuery",array($locationid));
+			$result = pg_execute($dbconn,"locationImagesQuery",array($tourid,$locationid));
 			$tag = '';
 			$close = '';
 
