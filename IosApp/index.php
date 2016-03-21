@@ -85,10 +85,8 @@
     		    if (data == true) {
 
     			     tourId=myText;
+    			      getDataForTour();
     			   	  show('Page2');
-    			   	  coTour = JSON.parse(getJson(tourId));
-    			   	  console.log(coTour);
-    			   	  getDataForTour();
     			   	  
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
