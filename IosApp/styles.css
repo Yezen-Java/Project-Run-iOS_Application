@@ -309,3 +309,7 @@ height: 200px;
 .HomePageText {
 	font-size: 15px;
 }
+
+#btnGallery {
+	margin-left: 200px;
+}
