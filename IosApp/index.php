@@ -56,9 +56,12 @@
 			    var obj = coTour[i];
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
-			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
-			    if (Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)) < 0.000008){
+			    var clat= position.coords.latitude;
+			    var clang = position.coords.longitude;
+			    console.log(Math.sqrt((clat-lat)*(clat-lat) + (clang-lang)*(clang-lang)));
+			    if (Math.sqrt((clat-lat)*(clat-lat) + (clang-lang)*(clang-lang)) < 0.00008){
 			    	console.log("Works");
+			    	alert('Works');
 			    }
 			}
 			}
