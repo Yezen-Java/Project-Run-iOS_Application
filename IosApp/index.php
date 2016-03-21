@@ -36,7 +36,23 @@
             $( document ).ready(function() {
 
             	$("#AlertDiv").addClass("hidden");
-        });
+
+            	window.setInterval(function(){
+					getLocation();
+				}, 5000);
+        	});
+
+        	function getLocation() {
+			    if (navigator.geolocation) {
+			        navigator.geolocation.getCurrentPosition(showPosition);
+			    } else { 
+			        x.innerHTML = "Geolocation is not supported by this browser.";
+			    }
+			}
+
+			function showPosition(position) {
+				console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
+			}
             // show the given page, hide the rest
             function show(elementID) {
                 // try to find the requested page and alert if it's not found
