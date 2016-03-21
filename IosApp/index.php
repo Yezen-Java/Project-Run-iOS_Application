@@ -38,7 +38,7 @@
             	$("#AlertDiv").addClass("hidden");
             	window.setInterval(function(){
 					getLocation();
-				}, 5000);
+				}, 50000);
         	});
 
         	var coTour = null;
@@ -54,6 +54,7 @@
 			function showPosition(position) {
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
+			    console.log(coTour[i]);
 			    console.log(obj.latitude);
 			    console.log(obj.longitude);
 			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
