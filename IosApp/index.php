@@ -52,6 +52,10 @@
 			}
 
 			function showPosition(position) {
+			for(var i = 0; i < coTour.length; i++) {
+			    var obj = coTour[i];
+			    console.log(obj.id);
+			}
 				console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
 			}
             // show the given page, hide the rest
@@ -84,10 +88,12 @@
     		    
     		    if (data == true) {
 
-    			     tourId=myText;
-    			      getDataForTour();
-    			   	  show('Page2');
-    			   	  getJson(tourId);
+    			    tourId=myText;
+    			    getDataForTour();
+    			   	show('Page2');
+    			   	coTour = JSON.parse(getJson(tourId));
+    				console.log(coTour);
+    		
     			   	  
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
@@ -128,13 +134,8 @@
 
 			function getJson(value){
 
-				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
-    		var data2 = JSON.parse(data);
-    		console.log(data2);
-    		for(var i = 0; i < data2.length; i++) {
-			    var obj = data2[i];
-			    console.log(obj.id);
-			}
+			$.post('database/GetLocationJson.php',{TourId:value}, function(data){
+    		return data;
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
        //      $.each(result, function(i, field){
