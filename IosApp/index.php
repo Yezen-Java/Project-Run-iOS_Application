@@ -243,7 +243,8 @@
 		
   <div class="topHeader">
    
-	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label></center>
+	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label>	
+	<button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button></center>
 
       </div>
 	  
@@ -326,8 +327,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		//Gallery page 
 		
 <!--		start of gallery page -->
-	
-	<button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
+
 		
 	
 		
