@@ -135,7 +135,7 @@
     		console.log(data2);
     		for(var i = 0; i < data2.length; i++) {
 			    var obj = data2[i];
-			    console.log(obj);
+			    console.log(obj.id);
 			}
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
