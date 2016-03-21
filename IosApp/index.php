@@ -387,7 +387,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 	 
 </div>	  
 	  
-	
+ <button id="btnGallery" onclick="show('Page2');"  class="btn btn-primary"><span class="glyphicon glyphicon-picture"></span><p class="HomePageText">Gallery</p></button>	
 
 	 
 
@@ -395,7 +395,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <center>
 	
 	<ul id= "listOfMedia" class="listOfPictures">
-			 <button id="btnGallery" onclick="show('Page2');"  class="btn btn-primary"><span class="glyphicon glyphicon-picture"></span><p class="HomePageText">Gallery</p></button>
+			
 	 
 		<center class="galleryTopText">Picture Gallery</center>
 	
