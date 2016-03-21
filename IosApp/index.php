@@ -384,10 +384,13 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
         </div>
     </div>
 	
-	 <button id="btnGallery" onclick="show('Page2');"  class="btn btn-primary"><span class="glyphicon glyphicon-picture"></span><p class="HomePageText">Gallery</p></button>
+	 
 </div>	  
 	  
-	
+	<div>
+	 <button id="btnGallery" onclick="show('Page2');"  class="btn btn-primary"><span class="glyphicon glyphicon-picture"></span><p class="HomePageText">Gallery</p></button>
+	 
+	 </div>
 
 <!-- populating the pictures here  -->
 <center>
