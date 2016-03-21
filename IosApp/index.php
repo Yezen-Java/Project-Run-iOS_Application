@@ -126,7 +126,7 @@
 
 			function getJson(value){
 
-				$.post('database/getLocationJson.php',{TourId:value}, function(data){
+				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
     		 $('#justTheYellowButtons').html(data);
     		 console.log(data);
  				});
