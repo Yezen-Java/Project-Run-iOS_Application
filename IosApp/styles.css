@@ -55,15 +55,8 @@ font-size: 10px;
 	
 }
 
-/*abdi image gallery*/
-#ImageGalleryDiv{
-	
-}
-
 .galleryPictures{
-	margin-bottom: 10px;
-	width: 200px;
-	height: 200px;
+	background-color: red;
 }
 
 /*the gallery pictures can be set here */
