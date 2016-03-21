@@ -55,12 +55,22 @@ font-size: 10px;
 	
 }
 
+/*abdi image gallery*/
 #ImageGalleryDiv{
 
 	background-color: black;
 	
 }
 
+.galleryPictures{
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+/*//===========================*/
 .imageButtons {
 	width: 120px;
 	height: 100px;
