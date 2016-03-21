@@ -42,7 +42,7 @@
 				}, 5000);
         	});
 
-        	var coordinates;
+        	var coordinates = [];
 
         	function getLocation() {
 			    if (navigator.geolocation) {
@@ -134,7 +134,8 @@
 				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
     		 $('#justTheYellowButtons').html(data);
     		 console.log(data);
- 				});
+    		 return data;
+ 			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
        //      $.each(result, function(i, field){
        //          $("div").append(field + " ");
