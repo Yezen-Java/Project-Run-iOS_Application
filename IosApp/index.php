@@ -91,7 +91,7 @@
     			    tourId=myText;
     			    getDataForTour();
     			   	show('Page2');
-    			   	coTour = JSON.parse(getJson(tourId));
+    			   	coTour = getJson(tourId);
     				console.log(coTour);
     		
     			   	  
@@ -135,7 +135,7 @@
 			function getJson(value){
 
 			$.post('database/GetLocationJson.php',{TourId:value}, function(data){
-    		return data;
+    		return JSON.parse(data);
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
        //      $.each(result, function(i, field){
