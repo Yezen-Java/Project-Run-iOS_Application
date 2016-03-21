@@ -87,6 +87,7 @@
     			     tourId=myText;
     			      getDataForTour();
     			   	  show('Page2');
+    			   	  getJson(tourId);
     			   	  
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
@@ -128,7 +129,6 @@
 			function getJson(value){
 
 				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
-    		 $('#justTheYellowButtons').html(data);
     		var data2 = JSON.parse(data);
     		console.log(data2);
     		for(var i = 0; i < data2.length; i++) {
