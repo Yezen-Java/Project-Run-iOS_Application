@@ -393,7 +393,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		<center class="galleryTopText">Picture Gallery</center>
 	
 
-
+	<button id="btnGallery" onclick="show('Page2');" href="add.html"  class="btn btn-success"><span class="glyphicon glyphicon-home"></span><p class="HomePageText">HomePage</p></button>
 		
 		</div>	  
 	</ul>	
@@ -401,12 +401,14 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 </center>		   
 				 
 <!--		generic home button for navigating back		   -->
+<!--
 	<div class="span2">
           <a style="text-decoration: none" class="pageButtons  btn-default btn-lg btn-block">
       		<span  onclick="show('Page2');"><img class="imageButtons" img-block src="images/home.png" width="600px" align="left" ><p class="imgTextTop" align="left">Home</p><p align="left" class="imgBottomText">Go back</p>
 			</span> 
 		  </a>
 	</div>
+-->
 
 
 <!--	  The picture stuff end-->
