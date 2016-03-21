@@ -54,13 +54,15 @@
 			function showPosition(position) {
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
+			    var id = obj.id;
+			    console.log(id);
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
 			    var clat= position.coords.latitude;
 			    var clang = position.coords.longitude;
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    if (distance < 0.00008){
-			    	console.log(obj.id);
+			    	console.log(id);
 			    	$('#test123').text("Works");
 			    }
 			}
