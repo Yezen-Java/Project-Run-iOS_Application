@@ -42,6 +42,8 @@
 				}, 5000);
         	});
 
+        	var coordinates;
+
         	function getLocation() {
 			    if (navigator.geolocation) {
 			        navigator.geolocation.getCurrentPosition(showPosition);
@@ -51,6 +53,9 @@
 			}
 
 			function showPosition(position) {
+				for (var i = 0; i < coordinates.length; i++) {
+					console.log(coordinates[i]);
+				};
 				console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
 			}
             // show the given page, hide the rest
@@ -85,7 +90,7 @@
 
     			     tourId=myText;
     			   	  show('Page2');
-    			   	  getJson(tourId);
+    			   	  coordinates = getJson(tourId);
     			   	  getDataForTour();
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
