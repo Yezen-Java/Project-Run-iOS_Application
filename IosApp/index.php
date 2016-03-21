@@ -38,7 +38,7 @@
             	$("#AlertDiv").addClass("hidden");
             	window.setInterval(function(){
 					getLocation();
-				}, 50000);
+				}, 5000);
         	});
 
         	var coTour = null;
