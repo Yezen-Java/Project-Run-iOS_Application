@@ -36,6 +36,9 @@
             $( document ).ready(function() {
 
             	$("#AlertDiv").addClass("hidden");
+            	window.setInterval(function(){
+					getLocation();
+				}, 5000);
         	});
 
         	var coTour;
@@ -49,10 +52,6 @@
 			}
 
 			function showPosition(position) {
-				console.log(coTour);
-				for (var i = 0; i < coordinates.length; i++) {
-					console.log(coordinates[i]);
-				};
 				console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
 			}
             // show the given page, hide the rest
@@ -90,9 +89,7 @@
     			   	  coTour = JSON.parse(getJson(tourId));
     			   	  console.log(coTour);
     			   	  getDataForTour();
-    			   	  window.setInterval(function(){
-						getLocation();
-					  }, 5000);
+    			   	  
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
 
@@ -137,7 +134,7 @@
     		console.log(data);
     		for(var i = 0; i < data.length; i++) {
 			    var obj = data[i];
-			    console.log(obj.id);
+			    console.log(obj);
 			}
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
