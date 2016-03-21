@@ -313,3 +313,7 @@ height: 200px;
 #btnGallery {
 	margin-left: 50px;
 }
+
+#testDiv {
+	background-color: black;
+}
