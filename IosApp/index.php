@@ -384,7 +384,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     </div>
 </div>	  
 	  
-
+	<button id="btnGallery" onclick="show('Page2');"  class="btn btn-success"><span class="glyphicon glyphicon-home"></span><p class="HomePageText">Gallery</p></button>
 
 <!-- populating the pictures here  -->
 <center>
@@ -393,7 +393,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		<center class="galleryTopText">Picture Gallery</center>
 	
 
-	<button id="btnGallery" onclick="show('Page2');" href="add.html"  class="btn btn-success"><span class="glyphicon glyphicon-home"></span><p class="HomePageText">HomePage</p></button>
+
 		
 		</div>	  
 	</ul>	
