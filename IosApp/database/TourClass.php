@@ -94,7 +94,7 @@ class TourClass
 			//set up the nested associative arrays using literal array notation
 			$firstArray = array("id" => $rows['locationid'], "latitude" => $rows['latitude'], "longitude"=> $rows['longitude']);
 			//push items onto main array with bracket notation (this will result in numbered indexes)
-			array_push($myArray,$secondArray);
+			array_push($myArray,$firstArray);
 		}
 		 $json = json_encode($myArray);
 		return $json;
