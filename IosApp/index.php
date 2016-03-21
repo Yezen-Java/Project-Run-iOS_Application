@@ -36,10 +36,6 @@
             $( document ).ready(function() {
 
             	$("#AlertDiv").addClass("hidden");
-
-            	window.setInterval(function(){
-					getLocation();
-				}, 5000);
         	});
 
         	var coTour;
@@ -94,6 +90,9 @@
     			   	  coTour = JSON.parse(getJson(tourId));
     			   	  console.log(coTour);
     			   	  getDataForTour();
+    			   	  window.setInterval(function(){
+						getLocation();
+					  }, 5000);
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
 
@@ -135,11 +134,10 @@
 
 				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
     		 $('#justTheYellowButtons').html(data);
-
+    		console.log(data);
     		for(var i = 0; i < data.length; i++) {
 			    var obj = data[i];
 			    console.log(obj.id);
-				
 			}
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
