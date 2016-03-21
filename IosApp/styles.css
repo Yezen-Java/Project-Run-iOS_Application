@@ -55,6 +55,7 @@ font-size: 10px;
 	
 }
 /*testing this */
+/*
 .ImageGalleryDiv{
 	
 	background-color: red;
@@ -62,13 +63,16 @@ font-size: 10px;
 	height: 200px;
 	
 }
+*/
 
 
+/*
 .galleryPictures{
 	background-color: red;
 	width: 200px;
 	height: 200px;
 }
+*/
 
 /*testing end */
 
@@ -76,8 +80,8 @@ font-size: 10px;
 .mainGalleryBackground{
 	margin-top: 20px;
 	margin-bottom: 10px;
-	width: 200px;
-	height: 200px;
+	width: 200%;
+	height: 200%;
 	 box-shadow: 2px 2px 2px black;
 }
 
