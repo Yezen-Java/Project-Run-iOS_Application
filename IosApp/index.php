@@ -63,6 +63,7 @@
 			    if (distance < 0.00008){
 			    	console.log(id);
 			    	$('#test123').text("Works");
+			    	getMediaTour(id);
 			    }
 			}
 			}
