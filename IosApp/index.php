@@ -246,6 +246,7 @@
 	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label>	
 	<button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button></center>
 
+	  <p>TESTING ABDI</p>
       </div>
 	  
 	  <form action="gallery.html">
