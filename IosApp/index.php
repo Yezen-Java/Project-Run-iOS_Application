@@ -58,8 +58,9 @@
 			    var lang = obj.longitude;
 			    var clat= position.coords.latitude;
 			    var clang = position.coords.longitude;
-			    console.log(Math.sqrt((clat-lat)*(clat-lat) + (clang-lang)*(clang-lang)));
-			    if (Math.sqrt((clat-lat)*(clat-lat) + (clang-lang)*(clang-lang)) < 0.00008){
+			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
+			    console.log(distance);
+			    if (distance < Math.pow(0.00008, 2)){
 			    	console.log("Works");
 			    	alert('Works');
 			    }
