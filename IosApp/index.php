@@ -54,11 +54,9 @@
 			function showPosition(position) {
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
-			    console.log(obj.latitude);
-			    console.log(obj.longitude);
-			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
+			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
 			    if (Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)) < 0.00008){
 			    	console.log(obj.id);
 			    }
