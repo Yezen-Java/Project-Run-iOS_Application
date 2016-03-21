@@ -58,7 +58,9 @@
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
 			    var clat= position.coords.latitude;
+			    console.log(clat);
 			    var clang = position.coords.longitude;
+			    console.log(clang);
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    if (distance < 0.00008){
 			    	console.log(id);
