@@ -57,8 +57,8 @@
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
 			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
-			    if (Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)) < 0.00008){
-			    	console.log(obj.id);
+			    if (Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)) < 0.000008){
+			    	console.log("Works");
 			    }
 			}
 			}
