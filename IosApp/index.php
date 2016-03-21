@@ -54,13 +54,15 @@
 			function showPosition(position) {
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
+			    console.log(obj.latitude);
+			    console.log(obj.longitude);
+			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
 			    if (Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)) < 0.00008){
 			    	console.log(obj.id);
 			    }
 			}
-				console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
 			}
             // show the given page, hide the rest
             function show(elementID) {
@@ -140,7 +142,6 @@
 			$.post('database/GetLocationJson.php',{TourId:value}, function(data){
     		
     		coTour = JSON.parse(data);
-    		console.log(coTour);
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
        //      $.each(result, function(i, field){
