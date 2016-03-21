@@ -339,6 +339,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 	 <div class="topHeader">
    
 <center class="topHeader"><label class="topHospitalNameText" >Royal Brompton Hospital</label></center>
+		 <button id="btnGallery" onclick="show('Page2');"  class="btn btn-primary"><span class="glyphicon glyphicon-picture"></span><p class="HomePageText">Gallery</p></button>
 
       </div>  
 
@@ -384,7 +385,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     </div>
 </div>	  
 	  
-	<button id="btnGallery" onclick="show('Page2');"  class="btn btn-success"><span class="glyphicon glyphicon-home"></span><p class="HomePageText">Gallery</p></button>
+	
 
 <!-- populating the pictures here  -->
 <center>
