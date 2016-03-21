@@ -52,10 +52,8 @@
 			}
 
 			function showPosition(position) {
-			console.log(coTour);
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
-			    console.log(coTour[i]);
 			    console.log(obj.latitude);
 			    console.log(obj.longitude);
 			    console.log(Math.sqrt((position.coords.latitude-lat)*(position.coords.latitude-lat) + (position.coords.longitude-lang)*(position.coords.longitude-lang)));
@@ -142,7 +140,6 @@
 			function getJson(value){
 
 			$.post('database/GetLocationJson.php',{TourId:value}, function(data){
-    		console.log(data);
     		coTour = JSON.parse(data);
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
