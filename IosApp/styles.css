@@ -23,7 +23,11 @@ border-bottom:1px solid white;
 	
 }
 
-
+/*Imagegallery test*/
+#ImageGalleryDiv{
+	height: 200px;
+	width: 200px;
+}
 
 
 
