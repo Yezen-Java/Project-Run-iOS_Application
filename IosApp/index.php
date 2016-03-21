@@ -246,7 +246,7 @@
 	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label>	
 	<button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button></center>
 
-	  <p>TESTING ABDI</p>
+
       </div>
 	  
 	  <form action="gallery.html">
@@ -378,6 +378,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
                     </button>
                     <button type="button" class="btn btn-primary next">
                         Next
+							  <p>TESTING ABDI</p>
                         <i class="glyphicon glyphicon-chevron-right"></i>
                     </button>
                 </div>
