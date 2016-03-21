@@ -135,6 +135,7 @@
 				$.post('database/GetLocationJson.php',{TourId:value}, function(data){
     		 $('#justTheYellowButtons').html(data);
     		 console.log(data);
+    		 JSON.parse(data);
     		 return data;
  			});
 			    // $.getJSON("/database/getLocationJson.php", function(result){
