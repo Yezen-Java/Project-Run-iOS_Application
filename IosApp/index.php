@@ -55,7 +55,6 @@
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
 			    var id = obj.id;
-			    console.log(id);
 			    var lat = obj.latitude;
 			    var lang = obj.longitude;
 			    var clat= position.coords.latitude;
