@@ -34,7 +34,7 @@ class TourClass
 				while($rows=pg_fetch_array($result)){
 					$name = $rows['lname'];
 					$id = $rows['locationid'];
-                    $imageSrc = $rowtwo['link'];
+                    $imageSrc = $rows['link'];
 
 					$htmlTage = $htmlTage."<div class='span2'>
 			          <button onclick='getMediaTour($id);' value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
