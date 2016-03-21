@@ -42,7 +42,7 @@
 				}, 5000);
         	});
 
-        	var coordinates = null;
+        	var coTour;
 
         	function getLocation() {
 			    if (navigator.geolocation) {
@@ -53,7 +53,7 @@
 			}
 
 			function showPosition(position) {
-				console.log(coordinates);
+				console.log(coTour);
 				for (var i = 0; i < coordinates.length; i++) {
 					console.log(coordinates[i]);
 				};
@@ -91,8 +91,8 @@
 
     			     tourId=myText;
     			   	  show('Page2');
-    			   	  coordinates = getJson(tourId);
-    			   	  JSON.parse(coordinates);
+    			   	  coTour = JSON.parse(getJson(tourId));
+    			   	  console.log(coTour);
     			   	  getDataForTour();
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
