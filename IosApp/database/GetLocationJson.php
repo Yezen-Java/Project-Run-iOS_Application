@@ -2,7 +2,7 @@
 include 'Connect.php';
 include 'TourClass.php';
 
-$getTourId = $_GET['TourId'];
+$getTourId = $_POST['TourId'];
 
 
 
