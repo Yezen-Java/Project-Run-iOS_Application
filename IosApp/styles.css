@@ -27,6 +27,12 @@ border-bottom:1px solid white;
 	
 }
 
+#ImageGalleryDiv{
+background-color: yellow;
+	height: 200px;
+	width: 200px;
+
+}
 
 .glyphicon{
 
