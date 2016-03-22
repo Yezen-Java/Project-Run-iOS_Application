@@ -8,7 +8,17 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
+   	<script src="jquery.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	 
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	 <script src="js/bootstrap-image-gallery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
 	      
 <!--	  IMGES STUFF-->
 
@@ -22,7 +32,6 @@
 	  
 	  <link rel="stylesheet" href="css/style.css">
 	  	  <link href="styles.css" rel="stylesheet">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	   	
 	  <style type='text/css'>
 				span {
@@ -466,16 +475,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	 <script src="jquery.js"></script>
-	 
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-	 <script src="js/bootstrap-image-gallery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
