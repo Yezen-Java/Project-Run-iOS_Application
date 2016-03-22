@@ -60,6 +60,15 @@
 			    }
 			}
 
+			function getLoaction(){
+				navigator.geolocation.getCurrentPosition(function(position) {
+				  var lat = position.coords.latitude;
+				  var lang = position.coords.longitude;
+				  console.log(lat);
+				  console.log(lang);
+				});
+			}
+
 			function showPosition(position) {
 			var locations = [];
 			var names = [];
@@ -513,7 +522,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     				<div class="form-group">
 						<input type="text" class="form-control" id="username" placeholder="Username">
 						<input type="text" class="form-control" id="Password" placeholder="Password">
-						<button type="button" class="btn btn-success" onclick="show('Page5')">Log In</button>
+						<button type="button" class="btn btn-success" onclick="getLoaction();">Log In</button>
 						<div id="AlertDiv" class="alert alert-danger">
 	                    <strong>Alert!</strong>Invalid Password</div>
 					</div>
@@ -535,8 +544,11 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 	<div class="topHeader">
 		<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
     </div>
-
-
+    <div>
+    	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
+		<button type="button" class="btn btn-success" onclick="getLoaction();">Add Location</button>
+    </div>
+	
 	</div>	
 
     </div>
