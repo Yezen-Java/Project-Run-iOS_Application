@@ -467,7 +467,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Please select a Location</h4>
       </div>
       <div class="modal-body">
         <ul id="multipleLocations">
