@@ -57,9 +57,10 @@
 				}, 5000);        	
 			}
 
-			$("#logIN").click(function(){
+			function stopping(){
 				window.clearInterval(stop);
-			});
+				show('Page4');
+			}
 
 
         	var coTour = null;
@@ -269,7 +270,7 @@
       					 <center class="centeredEnterTourCodeText"><label class="userNameText" for="usr"><p class="enterTourCodeButton">Enter Tour Code</p></label></center>
 								<input type="text" class="form-control" id="tourText">
 						<button type="button" class="btn btn-success" onclick="moveToNextPage()">Enter</button>
-						<button type="button" id="logIN" class="btn btn-success" onclick="show('Page4')">Log In</button>
+						<button type="button" id="logIN" class="btn btn-success" onclick="stopping()">Log In</button>
 						  <div id="AlertDiv" class="alert alert-danger">
                           <strong>Alert!</strong>Invalid Tour Code</div>
     				</div>
