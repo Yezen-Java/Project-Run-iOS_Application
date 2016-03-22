@@ -76,14 +76,19 @@
 			    	//$('#test123').text("Works");
 			    	//getMediaTour(id);
 			    }
-			}
+			} 
+			var isClosed = true;
 			console.log(locations);
-			if(locations.length == 1){
+			if(locations.length == 1 && isClosed){
 				getMediaTour(id);
 			} else if (locations.length>1){
 				$('#myModal').on('shown.bs.modal', function (e) {
 					return;
 				});
+				$('#myModal').on('hidden.bs.modal', function (e) {
+					isClosed = true;
+				});
+				isClosed = false;
 				$("#multipleLocations").empty();
 				for (var i = 0; i < locations.length; i++) {
 					var item = "<li id="+locations[i]+">"+locations[i]+"</li>";
