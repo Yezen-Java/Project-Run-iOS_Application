@@ -508,20 +508,19 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 				<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
 		    </div>
 
-
-						<div class="login">
-							<div class="container">
-				    				<div class="form-group">
-										<input type="text" class="form-control" id="username" placeholder="Username">
-										<input type="text" class="form-control" id="Password" placeholder="Password">
-										<button type="button" class="btn btn-success"  onclick="">Log In</button>
-										<div id="AlertDiv" class="alert alert-danger">
-					                    <strong>Alert!</strong>Invalid Password</div>
-									</div>
-							</div>
-						</div>
-			    	</div>
+			<div class="login">
+				<div class="container">
+    				<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Username">
+						<input type="text" class="form-control" id="Password" placeholder="Password">
+						<button type="button" class="btn btn-success"  onclick="">Log In</button>
+						<div id="AlertDiv" class="alert alert-danger">
+	                    <strong>Alert!</strong>Invalid Password</div>
+					</div>
 				</div>
+			</div>
+	    </div>
+	</div>
 
 
     <!--=======================================PAGE FOUR END============================================-->  
