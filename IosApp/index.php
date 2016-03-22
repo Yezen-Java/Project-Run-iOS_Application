@@ -46,15 +46,14 @@
 
             	$("#AlertDiv").addClass("hidden");
 				check();
-            	
-    //         	window.setInterval(function(){
-				// 	getLocation();
-				// }, 5000);
+
         	});
 
         	function check(){
-				setTimeout(getLocation(), 8000);
-        	}
+				window.setInterval(function(){
+					getLocation();
+				}, 5000);        	
+			}
 
 
         	var coTour = null;
