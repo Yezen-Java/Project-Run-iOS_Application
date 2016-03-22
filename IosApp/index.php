@@ -45,7 +45,6 @@
             $( document ).ready(function() {
 
             	$("#AlertDiv").addClass("hidden");
-				check();
 
         	});
 
