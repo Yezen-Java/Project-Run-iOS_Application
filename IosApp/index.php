@@ -51,15 +51,9 @@
 				// 	getLocation();
 				// }, 5000);
         	});
-        	var isLogInClicked = false;
 
         	function check(){
-        		while(!isLogInClicked){
-	    			$("#logIN").click(function(){
-					   isLogInClicked = true;
-	    			});
-					setTimeout(getLocation(), 8000);
-            	}
+				setTimeout(getLocation(), 8000);
         	}
 
 
@@ -158,6 +152,7 @@
     			    tourId=myText;
     			    getDataForTour();
     			   	show('Page2');
+    			   	check();
     			   	getJson(tourId);
     		
     			   	  
