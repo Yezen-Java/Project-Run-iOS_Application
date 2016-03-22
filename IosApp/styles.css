@@ -241,6 +241,9 @@ font-size: 30px;
 
 .mainGalleryBackground {
 	margin-left: -40px;
+	background-color: yellow;
+	height: 200px;
+	width: 200px;
 }
 
 .insideBodyButtons {
