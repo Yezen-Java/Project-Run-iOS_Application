@@ -212,7 +212,10 @@ background-color: #ffffff;
 	border-radius: 3%;
 }
 
+.slides{
 
+background-color: yellow;
+}
 
 .topCode {
 
@@ -346,11 +349,7 @@ margin-right: 10px;
 	background-color: black;
 }
 
-#blueimp-gallery {
-height: 200px;
-	width: 200px;
-	background-color: yellow;
-}
+
 
 #chooseLocations li a {
     padding: 5px 30px 5px 10px;
