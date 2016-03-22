@@ -65,7 +65,7 @@ class TourClass
             $imageFormates = array("jpg", "png", "gif", "bmp","jpeg","PNG","JPG","JPEG","GIF");
             $ext = explode(".",$inBucketName);
 				if (in_array($ext[1], $imageFormates)) {
-				$Tag = "<img class='myBigImage img-responsive'";
+				$Tag = "<img class='img-responsive'";
 			    $Close = ">";
 			      
 			    }else{
