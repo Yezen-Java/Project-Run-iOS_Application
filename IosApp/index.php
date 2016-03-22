@@ -52,6 +52,7 @@
 			}
 
 			function showPosition(position) {
+			var locations = [];
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
 			    var id = obj.id;
@@ -63,11 +64,23 @@
 			    console.log(clang);
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    if (distance < 0.00008){
+			    	locations.push(id);
 			    	console.log(id);
-			    	$('#test123').text("Works");
-			    	getMediaTour(id);
+			    	//$('#test123').text("Works");
+			    	//getMediaTour(id);
 			    }
 			}
+
+			if(locations.length == 1){
+				getMediaTour(id);
+			} else if (locations.length>1){
+				$("#chooseLocations").modal();
+				for (var i = 0; i < locations.length; i++) {
+					var item = "<li id="+locations[i]+">"+locations[i]+"</li>";
+					$("#multipleLocations").append(item);
+				};
+			}
+
 			}
             // show the given page, hide the rest
             function show(elementID) {
@@ -425,6 +438,28 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!--	  The picture stuff end-->
 
     </div> 
+
+    <div id="chooseLocations" class="modal fade" role="dialog">
+  	<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <ul id="multipleLocations">
+        	
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 	 
 
 <!--=======================================THIRD PAGE  END ============================================-->  
