@@ -500,18 +500,19 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 
 <!--=======================================THIRD PAGE  END ============================================-->  
 	  
+<!--=======================================PAGE FOUR START============================================-->  
+ 
     <div id="Page4" class="page" style="display:none">
 
-		<!-- <div class="container">
+		 <div class="container">
     <div class="enterTextpage">
 			
-			 Enter Tour Code : <input type="text" name="fname" id="tourText">	
+			 <!-- Enter Tour Code : <input type="text" name="fname" id="tourText">	 -->
 			
 			</div>
 
-		 </div> -->
+		 </div> 
 		
-<!--		test code start -->
 
 	<div>
 		
@@ -542,6 +543,27 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 	</div>	
 
     </div>
+
+    <!--=======================================PAGE FOUR END============================================-->  
+
+    <!--=======================================PAGE FIVE START============================================-->  
+
+
+    <div id="Page5" class="page" style="display:none">
+
+	<div>
+		
+	<div class="topHeader">
+		<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
+    </div>
+
+
+	</div>	
+
+    </div>
+
+     <!--=======================================PAGE FIVE END============================================-->  
+
 	  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    
