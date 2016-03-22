@@ -503,45 +503,31 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!--=======================================PAGE FOUR START============================================-->  
  
     <div id="Page4" class="page" style="display:none">
+		<div>
+			<div class="topHeader">
+				<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
+		    </div>
 
-		 <div class="container">
-    <div class="enterTextpage">
-			
-			 <!-- Enter Tour Code : <input type="text" name="fname" id="tourText">	 -->
-			
-			</div>
-
-		 </div> 
-		
-
-	<div>
-		
-	<div class="topHeader">
-		<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
-    </div>
-
-	<div class="insideBodyButtons">
-		<div class="container-fluid">
-	    	<div class="row-fluid">
-				<div class="login">
-					<div class="container">
-		  				<form role="form">
-		    				<div class="form-group">
-								<input type="text" class="form-control" id="username" placeholder="Username">
-								<input type="text" class="form-control" id="Password" placeholder="Password">
-								<button type="button" class="btn btn-success"  onclick="">Log In</button>
-								<div id="AlertDiv" class="alert alert-danger">
-			                    <strong>Alert!</strong>Invalid Password</div>
+			<div class="insideBodyButtons">
+				<div class="container-fluid">
+			    	<div class="row-fluid">
+						<div class="login">
+							<div class="container">
+				  				<form role="form">
+				    				<div class="form-group">
+										<input type="text" class="form-control" id="username" placeholder="Username">
+										<input type="text" class="form-control" id="Password" placeholder="Password">
+										<button type="button" class="btn btn-success"  onclick="">Log In</button>
+										<div id="AlertDiv" class="alert alert-danger">
+					                    <strong>Alert!</strong>Invalid Password</div>
+									</div>
+				  				</form>
 							</div>
-		  				</form>
-					</div>
+						</div>
+			    	</div>
 				</div>
-	    	</div>
-		</div>
-	</div>
-
-	</div>	
-
+			</div>
+		</div>	
     </div>
 
     <!--=======================================PAGE FOUR END============================================-->  
