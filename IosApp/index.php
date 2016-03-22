@@ -96,7 +96,7 @@
 				for (var i = 0; i < locations.length; i++) {
 					var lID = locations[i];
 					var nameOfLocation = names[i];
-					var item = "<li onclick="+"getMediaTour("+lID+")"+">"+nameOfLocation+"</li>";
+					var item = "<li onclick="+"getMediaTour("+lID+")"+"><a>"+nameOfLocation+"</a></li>";
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
