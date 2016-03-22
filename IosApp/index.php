@@ -91,7 +91,7 @@
 				isClosed = false;
 				$("#multipleLocations").empty();
 				for (var i = 0; i < locations.length; i++) {
-					var item = "<li class='list-group-item ' onclick="+getMediaTour(locations[i]);+"id="+locations[i]+">"+locations[i]+"</li>";
+					var item = "<li onclick="+getMediaTour(locations[i]);+"id="+locations[i]+">"+locations[i]+"</li>";
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
@@ -465,9 +465,9 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
         <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <div class="list-group" id="multipleLocations">
+        <ul id="multipleLocations">
         	
-        </div>
+        </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
