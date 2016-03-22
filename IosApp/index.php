@@ -536,7 +536,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     				<div class="form-group">
 						<input type="text" class="form-control" id="username" placeholder="Username">
 						<input type="text" class="form-control" id="Password" placeholder="Password">
-						<button type="button" class="btn btn-success" onclick="getMyLocation();">Log In</button>
+						<button type="button" class="btn btn-success" onclick="">Log In</button>
 						<div id="AlertDiv" class="alert alert-danger">
 	                    <strong>Alert!</strong>Invalid Password</div>
 					</div>
