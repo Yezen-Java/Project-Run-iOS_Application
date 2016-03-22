@@ -246,8 +246,8 @@
 					
       					 <center class="centeredEnterTourCodeText"><label class="userNameText" for="usr"><p class="enterTourCodeButton">Enter Tour Code</p></label></center>
 								<input type="text" class="form-control" id="tourText">
-						<button type="button" class="btn btn-success"  onclick="moveToNextPage()">Enter</button>
-						<button type="button" class="btn btn-success"  onclick="">Log In</button>
+						<button type="button" class="btn btn-success" onclick="moveToNextPage()">Enter</button>
+						<button type="button" class="btn btn-success" onclick="show('Page4')">Log In</button>
 						  <div id="AlertDiv" class="alert alert-danger">
                           <strong>Alert!</strong>Invalid Tour Code</div>
     				</div>
@@ -500,6 +500,48 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 
 <!--=======================================THIRD PAGE  END ============================================-->  
 	  
+    <div id="Page4" class="page" style="">
+
+		<!-- <div class="container">
+    <div class="enterTextpage">
+			
+			 Enter Tour Code : <input type="text" name="fname" id="tourText">	
+			
+			</div>
+
+		 </div> -->
+		
+<!--		test code start -->
+
+	<div>
+		
+	<div class="topHeader">
+		<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
+    </div>
+
+	<div class="insideBodyButtons">
+		<div class="container-fluid">
+	    	<div class="row-fluid">
+				<div class="login">
+					<div class="container">
+		  				<form role="form">
+		    				<div class="form-group">
+								<input type="text" class="form-control" id="username" placeholder="Username">
+								<input type="text" class="form-control" id="Password" placeholder="Password">
+								<button type="button" class="btn btn-success"  onclick="">Log In</button>
+								<div id="AlertDiv" class="alert alert-danger">
+			                    <strong>Alert!</strong>Invalid Password</div>
+							</div>
+		  				</form>
+					</div>
+				</div>
+	    	</div>
+		</div>
+	</div>
+
+	</div>	
+
+    </div>
 	  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    
@@ -512,5 +554,6 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
   </body>
+
 </html>
 
