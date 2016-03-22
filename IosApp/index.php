@@ -49,7 +49,7 @@
 
         	});
 
-        	var stop = check();
+        	var stop = "";
 
         	function check(){
 				return window.setInterval(function(){
@@ -58,6 +58,7 @@
 			}
 
 			function stopping(){
+				console.log(stop);
 				window.clearInterval(stop);
 				show('Page4');
 			}
@@ -158,7 +159,7 @@
     			    tourId=myText;
     			    getDataForTour();
     			   	show('Page2');
-    			   	check();
+    			   	stop = check();
     			   	getJson(tourId);
     		
     			   	  
