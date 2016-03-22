@@ -92,7 +92,7 @@
 				$("#multipleLocations").empty();
 				for (var i = 0; i < locations.length; i++) {
 					var lID = locations[i];
-					var item = "<li id="+lID+"onclick="+"getMediaTour(lID)"+">"+lID+"</li>";
+					var item = "<li onclick="+"getMediaTour(lID)"+">"+lID+"</li>";
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
