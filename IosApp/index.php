@@ -84,10 +84,9 @@
 				$('#myModal').on('shown.bs.modal', function (e) {
 					return;
 				});
-
+				$("#multipleLocations").empty();
 				for (var i = 0; i < locations.length; i++) {
 					var item = "<li id="+locations[i]+">"+locations[i]+"</li>";
-					$("#multipleLocations").empty();
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
