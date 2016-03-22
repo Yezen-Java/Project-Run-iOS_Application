@@ -276,9 +276,14 @@
     <div id="Page2" class="page" style="display:none">
 		
   <div class="topHeader">
-   <button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
-	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label>	
-	</center>
+   
+	  <center>
+		  <label class="topHospitalNameText" id='test123'>Tour Activity</label>
+	  <button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
+		  
+	  </center>
+		
+
 
 
       </div>
