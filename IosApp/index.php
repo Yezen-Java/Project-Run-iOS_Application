@@ -81,8 +81,13 @@
 			if(locations.length == 1){
 				getMediaTour(id);
 			} else if (locations.length>1){
+				$('#myModal').on('shown.bs.modal', function (e) {
+					return;
+				});
+
 				for (var i = 0; i < locations.length; i++) {
 					var item = "<li id="+locations[i]+">"+locations[i]+"</li>";
+					$("#multipleLocations").empty();
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
