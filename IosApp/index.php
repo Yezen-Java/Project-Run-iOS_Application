@@ -281,14 +281,12 @@
 		 
 	 
 		  <center>
-			  <div>
+
 			   <button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
 			    <button id="btnHomePage" onclick="show('Page1');"   class="btn btn-danger"><p class="HomePageText">HomePage</p></button>
 				  
-				  </div>
-		  <div class="topTourActivityDiv">
 			   <label class="topHospitalNameText" id='test123'>Tour Activity</label>
-			  </div>
+	
 		  </center>
 	  </div>
 		
