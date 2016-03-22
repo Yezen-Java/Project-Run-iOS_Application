@@ -92,7 +92,7 @@ class TourClass
 		$myArray = array();
 		while ($rows = pg_fetch_array($result)) {
 			//set up the nested associative arrays using literal array notation
-			$firstArray = array("id" => $rows['locationid'], "latitude" => $rows['latitude'], "longitude"=> $rows['longitude']);
+			$firstArray = array("id" => $rows['locationid'], "latitude" => $rows['latitude'], "longitude"=> $rows['longitude'],"name"=> $rows['lname']);
 			//push items onto main array with bracket notation (this will result in numbered indexes)
 			array_push($myArray,$firstArray);
 		}

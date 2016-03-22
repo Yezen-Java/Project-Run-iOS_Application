@@ -62,6 +62,7 @@
 
 			function showPosition(position) {
 			var locations = [];
+			var names = [];
 			for(var i = 0; i < coTour.length; i++) {
 			    var obj = coTour[i];
 			    var id = obj.id;
@@ -69,9 +70,11 @@
 			    var lang = obj.longitude;
 			    var clat= position.coords.latitude;
 			    var clang = position.coords.longitude;
+			    var name = obj.name;
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    if (distance < 0.00008){
 			    	locations.push(id);
+					names.push(name);
 			    	console.log(id);
 			    	//$('#test123').text("Works");
 			    	//getMediaTour(id);
@@ -92,7 +95,8 @@
 				$("#multipleLocations").empty();
 				for (var i = 0; i < locations.length; i++) {
 					var lID = locations[i];
-					var item = "<li onclick="+"getMediaTour("+lID+")"+">"+lID+"</li>";
+					var nameOfLocation = names[i];
+					var item = "<li onclick="+"getMediaTour("+lID+")"+">"+nameOfLocation+"</li>";
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
