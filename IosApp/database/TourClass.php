@@ -65,11 +65,11 @@ class TourClass
             $imageFormates = array("jpg", "png", "gif", "bmp","jpeg","PNG","JPG","JPEG","GIF");
             $ext = explode(".",$inBucketName);
 				if (in_array($ext[1], $imageFormates)) {
-				$Tag = "<img class='img-responsive'";
+				$Tag = "<img class='myBigImage img-responsive'";
 			    $Close = ">";
 			      
 			    }else{
-			      $Tag = "<video controls class='videoCheck' > <source";
+			      $Tag = "<video controls > <source";
 			    $Close = "></video>";
 			    }
 			    //This where the php return the html code with the data from the database, 
