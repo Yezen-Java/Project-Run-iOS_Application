@@ -91,7 +91,8 @@
 				isClosed = false;
 				$("#multipleLocations").empty();
 				for (var i = 0; i < locations.length; i++) {
-					var item = "<li onclick='getMediaTour(locations[i])'id='locations[i]'>locations[i]</li>";
+					var lID = locations[i];
+					var item = "<li onclick="+getMediaTour(lID)+"id="+lID+">"+lID+"</li>";
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
