@@ -16,10 +16,7 @@ border-bottom:1px solid white;
 	
 }
 
-.img-responsive{
-background-color: yellow;
 
-}
 
 .topText {
 
@@ -31,12 +28,7 @@ background-color: yellow;
 	
 }
 
-.galleryPictures{
-background-color: yellow;
-	height: 200px;
-	width: 200px;
 
-}
 
 .glyphicon{
 
@@ -355,7 +347,9 @@ margin-right: 10px;
 }
 
 #blueimp-gallery {
-
+height: 200px;
+	width: 200px;
+	background-color: yellow;
 }
 
 #chooseLocations li a {
