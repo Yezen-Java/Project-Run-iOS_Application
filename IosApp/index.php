@@ -63,14 +63,14 @@
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    if (distance < 0.00008){
 			    	locations.push(id);
-			    	//console.log(id);
+			    	console.log(id);
 			    	//$('#test123').text("Works");
 			    	//getMediaTour(id);
 			    }
 			}
 			console.log(locations);
 			if(locations.length == 1){
-				getMediaTour(id);
+				//getMediaTour(id);
 			} else if (locations.length>1){
 				$("#chooseLocations").modal();
 				for (var i = 0; i < locations.length; i++) {
