@@ -37,7 +37,7 @@ class TourClass
                     $imageSrc = $rows['link'];
 
 					$htmlTage = $htmlTage."<div class='span2'>
-			          <button onclick='getMediaTour($id);' value='$id'  class='pageButtons btn-default btn-lg btn-block'>
+			          <button onclick='getMediaTour($id);' value='$id' style='text-decoration: none' class='pageButtons btn-default btn-lg btn-block'>
 			      		<span ><img class='imageButtons' img-block src='$imageSrc' width='200px'  align='left' ><p class='imgTextTop' align='left'>$name</p>
 						    </span> 
 					      </button> 
@@ -69,7 +69,7 @@ class TourClass
 			    $Close = ">";
 			      
 			    }else{
-			      $Tag = "<video controls > <source";
+			      $Tag = "<video controls class='videoCheck' > <source";
 			    $Close = "></video>";
 			    }
 			    //This where the php return the html code with the data from the database, 
