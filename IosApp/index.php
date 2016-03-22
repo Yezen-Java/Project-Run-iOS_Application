@@ -70,13 +70,13 @@
 			}
 			console.log(locations);
 			if(locations.length == 1){
-				//getMediaTour(id);
+				getMediaTour(id);
 			} else if (locations.length>1){
-				$("#chooseLocations").modal();
 				for (var i = 0; i < locations.length; i++) {
 					var item = "<li id="+locations[i]+">"+locations[i]+"</li>";
 					$("#multipleLocations").append(item);
 				};
+				$("#chooseLocations").modal('show');
 			}
 
 			}
