@@ -160,7 +160,7 @@
 
 
 			function getMediaTour(value){
-
+				$("#chooseLocations").modal('hide');
 				var LocationID = value;
 				console.log(value);
 		        $.post('database/GetTourMedia.php',{TourId:tourId,LocationID:LocationID}, function(data){
