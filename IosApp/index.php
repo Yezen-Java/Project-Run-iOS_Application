@@ -508,12 +508,9 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 				<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
 		    </div>
 
-			<div class="insideBodyButtons">
-				<div class="container-fluid">
-			    	<div class="row-fluid">
+
 						<div class="login">
 							<div class="container">
-				  				<form role="form">
 				    				<div class="form-group">
 										<input type="text" class="form-control" id="username" placeholder="Username">
 										<input type="text" class="form-control" id="Password" placeholder="Password">
@@ -521,14 +518,11 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 										<div id="AlertDiv" class="alert alert-danger">
 					                    <strong>Alert!</strong>Invalid Password</div>
 									</div>
-				  				</form>
 							</div>
 						</div>
 			    	</div>
 				</div>
-			</div>
-		</div>	
-    </div>
+
 
     <!--=======================================PAGE FOUR END============================================-->  
 
