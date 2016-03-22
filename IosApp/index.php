@@ -278,8 +278,9 @@
   <div class="topHeader">
    
 	  <center>
-		  <label class="topHospitalNameText" id='test123'>Tour Activity</label>
+		 
 	  <button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
+		   <label class="topHospitalNameText" id='test123'>Tour Activity</label>
 		  
 	  </center>
 		
