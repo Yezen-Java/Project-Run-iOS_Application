@@ -349,7 +349,7 @@ margin-right: 10px;
 #blueimp-gallery {
 height: 200px;
 	width: 200px;
-	
+	background-color: yellow;
 }
 
 #chooseLocations li a {
