@@ -500,7 +500,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 
 <!--=======================================THIRD PAGE  END ============================================-->  
 	  
-    <div id="Page4" class="page" style="">
+    <div id="Page4" class="page" style="display:none">
 
 		<!-- <div class="container">
     <div class="enterTextpage">
