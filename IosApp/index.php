@@ -49,11 +49,17 @@
 
         	});
 
+        	var stop = check();
+
         	function check(){
-				window.setInterval(function(){
+				return window.setInterval(function(){
 					getLocation();
 				}, 5000);        	
 			}
+
+			$("#logIN").click(function(){
+				window.clearInterval(stop);
+			});
 
 
         	var coTour = null;
