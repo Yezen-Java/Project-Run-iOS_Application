@@ -274,9 +274,9 @@
   
 <!--===================================SECOND PAGE START =============================================-->
     <div id="Page2" class="page" style="display:none">
-	<button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>	
+		
   <div class="topHeader">
-   
+   <button id="btnHomePage" onclick="show('Page1');"   class="btn btn-success"><p class="HomePageText">HomePage</p></button>
 	<center class="topHeader"><label class="topHospitalNameText" id='test123'>Tour Activity</label>	
 	</center>
 
