@@ -519,6 +519,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!-- populating the pictures here  -->
 <center>
 	
+<!--
 	<ul id= "listOfMedia" class="listOfPictures">
 			
 	 
@@ -529,6 +530,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		
 		  
 	</ul>
+-->
 
 	
 </center>		   
