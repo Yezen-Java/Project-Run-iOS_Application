@@ -75,14 +75,15 @@
 
 			function getMyLocation(){
 				var locationsName = document.getElementById("LoactionName").value;
+				var lat ='';
+				var lang ='';
 				navigator.geolocation.getCurrentPosition(function(position) {
-				  var lat = position.coords.latitude;
-				  var lang = position.coords.longitude;
+				  lat = position.coords.latitude;
+				  lang = position.coords.longitude;
 				  console.log(lat);
 				  console.log(lang);
 
 				});
-
 
 				  if (locationsName !='') {
 
