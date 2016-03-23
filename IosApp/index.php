@@ -490,7 +490,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
                     <button type="button" class="close" aria-hidden="true">&times;</button>
                     <h4 class="modal-title"></h4>
                 </div>
-				 <iframe width="550" height="350"  frameborder="0"></iframe>
+				
                 <div class="modal-body next"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default pull-left prev">
