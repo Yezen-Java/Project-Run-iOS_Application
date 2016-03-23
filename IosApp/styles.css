@@ -186,6 +186,7 @@ background-color: #ffffff;
 	border-radius: 30%;
 }
 
+/*
 .galleryPictures {
 	resize: both;
 	width: 200px;
@@ -207,6 +208,7 @@ background-color: #ffffff;
 	box-shadow: 3px 3px 2px #000;
 	transform: scale(1.2);
 }
+*/
 
 .galleryPicturesRight {
 	width: 200px;
