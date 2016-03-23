@@ -3,16 +3,16 @@
 include 'Connect.php';
 include 'UserManagement.php';
 
-$LocationName = $_POST['LocationName'];
+$locationName = $_POST['LocationName'];
 $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 
 $userManagementClass = new UserManagementClass();
-$result = $userManagementClass->InsertLocationCoordinates($LocationName,$latitude,$longitude,$dbconn);
+$result = $userManagementClass->InsertLocationCoordinates($locationName,$latitude,$longitude,$dbconn);
 
 
 if ($result) {
-	echo $result;
+	echo true;
 }else{
 	echo false;
 }
