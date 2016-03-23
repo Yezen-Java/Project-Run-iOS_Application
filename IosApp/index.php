@@ -74,11 +74,27 @@
 			}
 
 			function getMyLocation(){
+				var locationsName = document.getElementById("LoactionName").value;
 				navigator.geolocation.getCurrentPosition(function(position) {
 				  var lat = position.coords.latitude;
 				  var lang = position.coords.longitude;
 				  console.log(lat);
 				  console.log(lang);
+
+				  if (locationsName !='') {
+
+				 $.post('database/GetTourMedia.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
+		        	if(data == true){
+		        		console.log('Location Added');
+		        	}else{
+		        		console.log('location adding error');
+
+		        	}
+
+ 				});
+
+				  }
+
 				});
 			}
 
