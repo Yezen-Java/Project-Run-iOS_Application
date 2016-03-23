@@ -82,8 +82,10 @@
 				  lang = position.coords.longitude;
 				  console.log(lat);
 				  console.log(lang);
-				  
+
 				 	  if (locationsName !='') {
+
+				 	  	console.log('Test'+lat+' '+ lang);
 
 				 $.post('database/GetTourMedia.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
 		        	if(data == true){
