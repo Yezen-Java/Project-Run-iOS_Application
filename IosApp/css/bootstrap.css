@@ -1,4 +1,4 @@
-/*!
+.modal.fade .modal-dialog/*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -5884,6 +5884,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+/*
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
@@ -5899,6 +5900,18 @@ button.close {
        -o-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+*/
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+
+}	
+	
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
