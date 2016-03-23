@@ -1,7 +1,7 @@
 <?php
 
 include 'Connect.php';
-include 'UserManagement.php';
+include 'Classes/UserManagement.php';
 
 $locationName = $_POST['LocationName'];
 $latitude = $_POST['latitude'];

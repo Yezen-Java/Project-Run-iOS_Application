@@ -1,6 +1,6 @@
 <?php
 include 'Connect.php';
-include 'UserManagement.php';
+include 'Classes/UserManagement.php';
 
 $username = $_POST['username'];
 $password = $_POST['password'];
