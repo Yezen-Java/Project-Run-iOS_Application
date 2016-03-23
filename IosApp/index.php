@@ -89,7 +89,8 @@
 				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
 		        	if(data == true){
 		        		console.log('Location Added');
-		        	}else{
+		        		
+		        		}else{
 		        		console.log('location adding error');
 
 		        	}
@@ -645,11 +646,18 @@ OLD CODE END
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
 		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add Location</button>
     </div>
+    <div id ="LocationInsertedAlert">
+    	
+    </div>
 	
 	</div>	
 
     </div>
 
+<div id="locationAlert"class="alert alert-success" style="display:none">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
      <!--=======================================PAGE FIVE END============================================-->  
 
 	  
