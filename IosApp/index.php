@@ -131,7 +131,6 @@
 			var isClosed = true;
 			console.log(locations);
 			if(locations.length == 1 && isClosed){
-				stopChecking();
 				getMediaTour(id);
 			} else if (locations.length>1){
 				$('#myModal').on('shown.bs.modal', function (e) {
@@ -149,10 +148,10 @@
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
-				stopChecking();
 			}
 
 			}
+			var temp = "";
             // show the given page, hide the rest
             function show(elementID) {
                 // try to find the requested page and alert if it's not found
@@ -168,8 +167,10 @@
                     pages[index].style.display = 'none';
                 }
                 if(elementID == "Page2"){
-                	console.log("works");
-                	stop = check();
+                	console.log("on Page 2");
+                	temp = check();
+                } else {
+                	window.clearInterval(temp);
                 }
 
                 // then show the requested page
@@ -190,10 +191,9 @@
     			    tourId=myText;
     			    getDataForTour();
     			   	show('Page2');
-    			   	stop = check();
     			   	getJson(tourId);
     		
-    			   	  
+    			   
     			   	}else{
     			   	$("#AlertDiv").removeClass("hidden");
 
