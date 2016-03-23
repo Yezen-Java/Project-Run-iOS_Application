@@ -3,7 +3,7 @@
 /**
 * 
 */
-class UserManagementClass extends AnotherClass
+class UserManagementClass
 {
 	
 public function loginUserSession($username,$password){
