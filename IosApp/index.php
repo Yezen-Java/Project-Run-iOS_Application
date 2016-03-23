@@ -62,6 +62,7 @@
 			}
 
 			function stopChecking(){
+				console.log("stop Checking");
 				window.clearInterval(stop);
 				//show('Page4');
 			}
@@ -130,8 +131,8 @@
 			var isClosed = true;
 			console.log(locations);
 			if(locations.length == 1 && isClosed){
-				getMediaTour(id);
 				stopChecking();
+				getMediaTour(id);
 			} else if (locations.length>1){
 				$('#myModal').on('shown.bs.modal', function (e) {
 					return;
@@ -167,6 +168,7 @@
                     pages[index].style.display = 'none';
                 }
                 if(elementID == "Page2"){
+                	console.log("works");
                 	stop = check();
                 }
 
