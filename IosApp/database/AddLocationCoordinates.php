@@ -8,7 +8,7 @@ $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 
 $userManagementClass = new UserManagementClass();
-$result = $userManagementClass->InsertLocationCoordinates($locationName,$latitude,$longitude,$dbconn);
+$result = $userManagementClass->InsertLocationCoordinates($LocationName,$latitude,$longitude,$dbconn);
 
 
 if ($result) {
