@@ -188,3 +188,11 @@ html[xmlns] .clearfix { display: block; }
 
 .galleryTopText 
 }
+
+.fourthPageMainArea {
+		height: 200px;
+	margin-top: 200px;
+	border-radius: 1%;
+	margin-left: 50px;
+	margin-right: 50px;
+}
