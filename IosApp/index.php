@@ -82,8 +82,7 @@
 				  lang = position.coords.longitude;
 				  console.log(lat);
 				  console.log(lang);
-				});
-					  if (locationsName !='') {
+				  if (locationsName !='') {
 
 				 	  	console.log('Test'+locationsName+lat+' '+ lang);
 
@@ -97,6 +96,8 @@
 
  				});
 			}
+				});
+					  
 			}
 
 			function showPosition(position) {
