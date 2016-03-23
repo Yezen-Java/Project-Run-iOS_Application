@@ -525,6 +525,8 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 	  
 <!--=======================================PAGE FOUR START============================================-->  
  
+<!--
+OLD CODE CAN BE DELETED
     <div id="Page4" class="page" style="display:none">
 		<div>
 			<div class="topHeader">
@@ -544,7 +546,57 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 			</div>
 	    </div>
 	</div>
+OLD CODE END 
+-->
 
+<!--	start -->
+    <div id="Page4" class="page" style="display:none">
+		<div>
+			<div class="topHeader">
+				<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
+		    </div>
+			<!--and still-->
+	 
+
+
+
+      
+		<div class="fourthPageMainArea">
+			
+			<div class="container">
+ 
+  				<form role="form">
+   
+    				<div class="form-group">
+					
+			<div class="login">
+
+    				<div class="form-group">
+						<input type="text" class="form-control" id="username" placeholder="Username">
+						<input type="text" class="form-control" id="Password" placeholder="Password">
+						<button type="button" class="btn btn-success" onclick="">Log In</button>
+						<div id="AlertDiv" class="alert alert-danger">
+	                    <strong>Alert!</strong>Invalid Password</div>
+			
+				</div>
+			</div>
+		
+  			
+			</div>
+				</form>	
+			
+			
+		</div>
+       
+      
+    	</div>
+
+	  </div>
+
+	    </div>
+	
+	
+<!--	end-->
 
     <!--=======================================PAGE FOUR END============================================-->  
 

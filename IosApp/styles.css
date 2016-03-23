@@ -3,10 +3,7 @@
 }
 
 
-.img{
-height: 200px;
-	width: 200px;
-}
+
 .topHeader {
 
 	background-color: #3A539B;
@@ -366,4 +363,12 @@ margin-right: 10px;
 
 #chooseLocations li a:hover {
     background: transparent no-repeat 3px 170px;
+}
+
+.fourthPageMainArea {
+	height: 200px;
+	margin-top: 200px;
+	border-radius: 1%;
+	margin-left: 50px;
+	margin-right: 50px;
 }
