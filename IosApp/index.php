@@ -57,9 +57,13 @@
 			}
 
 			function stopping(){
-				console.log(stop);
 				window.clearInterval(stop);
 				show('Page4');
+			}
+
+			function stopChecking(){
+				window.clearInterval(stop);
+				//show('Page4');
 			}
 
 
@@ -122,13 +126,12 @@
 			    	//getMediaTour(id);
 			    }
 			} 
-			var count = 0;
 
 			var isClosed = true;
 			console.log(locations);
-			if(locations.length == 1 && isClosed && count < 1){
-				count++;
+			if(locations.length == 1 && isClosed){
 				getMediaTour(id);
+				stopChecking();
 			} else if (locations.length>1){
 				$('#myModal').on('shown.bs.modal', function (e) {
 					return;
@@ -145,6 +148,7 @@
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
+				stopChecking();
 			}
 
 			}
