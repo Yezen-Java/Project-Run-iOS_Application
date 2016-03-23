@@ -82,8 +82,9 @@ font-size: 10px;
 	width: 200px;
 	height: 200px;
 	box-shadow: 2px 2px 2px black;
-	border-radius: 30%;
+
 }
+
 
 
 
@@ -165,8 +166,6 @@ background-color: #ffffff;
 
 }
 
-
-
 #fitin {
 	
     border: 1px solid black;
@@ -214,19 +213,6 @@ background-color: #ffffff;
 	height: 200px;
 	margin-left: 100px;
 	border-radius: 3%;
-}
-
-.slides{
-
-
-}
-
-.topCode {
-
-}
-
-.enterTextpage {
-	
 }
 
 .circleButtonX {
