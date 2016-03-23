@@ -489,7 +489,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
                 <div class="modal-header">
                     <button type="button" class="close" aria-hidden="true">&times;</button>
                     <h4 class="modal-title"></h4>
-					 <iframe width="550" height="350" src="http://www.youtube.com/embed/mwuPTI8AT7M?rel=0" frameborder="0"></iframe>
+					
           </div>
                 </div>
 				
