@@ -519,7 +519,6 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!-- populating the pictures here  -->
 <center>
 	
-<!--
 	<ul id= "listOfMedia" class="listOfPictures">
 			
 	 
@@ -530,25 +529,11 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 		
 		  
 	</ul>
--->
 
 	
 </center>		   
 				 
-<!--		generic home button for navigating back		   -->
-<!--
-	<div class="span2">
-          <a style="text-decoration: none" class="pageButtons  btn-default btn-lg btn-block">
-      		<span  onclick="show('Page2');"><img class="imageButtons" img-block src="images/home.png" width="600px" align="left" ><p class="imgTextTop" align="left">Home</p><p align="left" class="imgBottomText">Go back</p>
-			</span> 
-		  </a>
-	</div>
--->
 
-
-<!--	  The picture stuff end-->
-
-    </div> 
 
     <div id="chooseLocations" class="modal fade" role="dialog">
   	<div class="modal-dialog">
