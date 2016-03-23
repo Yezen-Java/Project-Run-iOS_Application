@@ -69,7 +69,7 @@ class TourClass
 			    $Close = ">";
 			      
 			    }else{
-			      $Tag = "<video controls > <source";
+			      $Tag = "<video controls class='myVideo'> <source";
 			    $Close = "></video>";
 			    }
 			    //This where the php return the html code with the data from the database, 
