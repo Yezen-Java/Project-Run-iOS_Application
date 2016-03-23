@@ -478,8 +478,9 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 
 
 		
-		</div>	  
-	</ul>	
+		  
+	</ul>
+
 	
 </center>		   
 				 
