@@ -83,7 +83,7 @@
 
 				});
 
-				
+
 				  if (locationsName !='') {
 
 				 $.post('database/GetTourMedia.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
@@ -95,6 +95,7 @@
 		        	}
 
  				});
+				}
 			}
 
 			function showPosition(position) {
