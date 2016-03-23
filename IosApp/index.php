@@ -555,13 +555,8 @@ OLD CODE END
 			<div class="topHeader">
 				<center class="topHeader"><label class="topHospitalNameText" >Hive Tours</label></center>
 		    </div>
-			<!--and still-->
-	 
 
-
-
-      
-		<div class="fourthPageMainArea">
+			<div class="fourthPageMainArea">
 			
 			<div class="container">
  
@@ -569,25 +564,25 @@ OLD CODE END
    
     				<div class="form-group">
 					
-			<div class="login">
+						<div class="login">
 
-    				<div class="form-group">
-						<input type="text" class="form-control" id="username" placeholder="Username">
-						<input type="text" class="form-control" id="Password" placeholder="Password">
+    						<div class="form-group">
+								<input type="text" class="form-control" id="username" placeholder="Username">
+								<input type="text" class="form-control" id="Password" placeholder="Password">
 						
-						<button type="button" class="btn btn-success" onclick="">Log In</button>
-						<button type="button" class="btn btn-primary" onclick="show('Page1');">Go Back</button>
+								<button type="button" class="btn btn-success" onclick="">Log In</button>
+								<button type="button" class="btn btn-primary" onclick="show('Page1');">Go Back</button>
 						
-						<div id="AlertDiv" class="alert alert-danger">
+								<div id="AlertDiv" class="alert alert-danger">
 							
-	                    <strong>Alert!</strong>Invalid Password</div>
+	                    		<strong>Alert!</strong>Invalid Password</div>
 			
-				</div>
-			</div>
+							</div>
+						</div>
 		
   			
-			</div>
-				</form>	
+				</div>
+			</form>	
 			
 			
 		</div>
@@ -596,8 +591,7 @@ OLD CODE END
     	</div>
 
 	  </div>
-
-	    </div>
+</div>
 	
 	
 <!--	end-->
