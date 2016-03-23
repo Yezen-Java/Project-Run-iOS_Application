@@ -166,6 +166,9 @@
                 for(var index = 0; index < pages.length; index++) {
                     pages[index].style.display = 'none';
                 }
+                if(elementID == "Page2"){
+                	stop = check();
+                }
 
                 // then show the requested page
                 element.style.display = 'block';
