@@ -212,6 +212,20 @@
 	}
 
 
+	function userlogin(){
+		var username = document.getElementById("username").value; 
+		var password = document.getElementById("Password").value;
+
+		$.post('database/LoginCheck.php',{username:username,password:password}, function(data){
+    		if(data == true){
+    			show('page5');
+    		}else{
+    			console.log('Login error');
+    		}
+ 		});
+	}
+
+
 			
 </script>
 	  
