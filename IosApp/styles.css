@@ -52,6 +52,12 @@ font-size: 10px;
 	
 }
 
+/*all glyph icons*/
+.glyphicon{
+	font: 10px;
+	color: white;
+}
+
 .modal.fade .modal-dialog{transform:none !important;}
 
 .body {
@@ -338,6 +344,8 @@ font-size: 30px;
 #btnHomePage {
 margin-right: 10px;
 	margin-bottom: 10px;
+	width: 30px;
+	height: 30px;
 }
 
 #btnHelp {
