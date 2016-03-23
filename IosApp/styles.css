@@ -1,6 +1,12 @@
 .body{
 	 text-decoration: none;
 }
+
+
+.img{
+height: 200px;
+	width: 200px;
+}
 .topHeader {
 
 	background-color: #3A539B;
