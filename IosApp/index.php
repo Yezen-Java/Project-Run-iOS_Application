@@ -121,9 +121,12 @@
 			    	//getMediaTour(id);
 			    }
 			} 
+			var count = 0;
+
 			var isClosed = true;
 			console.log(locations);
-			if(locations.length == 1 && isClosed){
+			if(locations.length == 1 && isClosed && count < 1){
+				count++;
 				getMediaTour(id);
 			} else if (locations.length>1){
 				$('#myModal').on('shown.bs.modal', function (e) {
