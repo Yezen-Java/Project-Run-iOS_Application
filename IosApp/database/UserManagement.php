@@ -46,6 +46,8 @@ public function InsertLocationCoordinates($locationName,$latitude,$longitude,$db
 
 	return false;
 }
+
+
 }
 
 

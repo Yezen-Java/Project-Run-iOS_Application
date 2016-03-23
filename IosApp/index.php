@@ -82,12 +82,12 @@
 				  lang = position.coords.longitude;
 				  console.log(lat);
 				  console.log(lang);
-
-				 	  if (locationsName !='') {
+				});
+					  if (locationsName !='') {
 
 				 	  	console.log('Test'+locationsName+lat+' '+ lang);
 
-				 $.post('database/GetTourMedia.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
+				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
 		        	if(data == true){
 		        		console.log('Location Added');
 		        	}else{
@@ -97,7 +97,6 @@
 
  				});
 			}
-				});
 			}
 
 			function showPosition(position) {
