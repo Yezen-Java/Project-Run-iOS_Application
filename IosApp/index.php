@@ -93,7 +93,7 @@
 
 				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
 		        	if(data == true){
-		        		console.log('Location Added');
+		        		Alert('Location added');
 		        		
 		        		}else{
 		        		console.log('location adding error');
