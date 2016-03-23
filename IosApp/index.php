@@ -218,7 +218,7 @@
 
 		$.post('database/LoginCheck.php',{username:username,password:password}, function(data){
     		if(data == true){
-    			show('page5');
+    			show('Page5');
     		}else{
     			console.log('Login error');
     		}
