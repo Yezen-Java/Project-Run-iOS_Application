@@ -533,27 +533,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 				 
 
 
-    <div id="chooseLocations" class="modal fade" role="dialog">
-  	<div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Please select a Location</h4>
-      </div>
-      <div class="modal-body">
-        <ul id="multipleLocations">
-        	
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
 </div>	 
 
 <!--=======================================THIRD PAGE  END ============================================-->  
@@ -673,7 +653,26 @@ OLD CODE END
 	     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+	<div id="chooseLocations" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
 
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Please select a Location</h4>
+	      </div>
+	      <div class="modal-body">
+			<ul id="multipleLocations">	      
+		  </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
   </body>
 
 </html>
