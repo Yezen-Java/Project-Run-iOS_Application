@@ -77,7 +77,7 @@
 				var locationsName = document.getElementById("LoactionName").value;
 				var lat ='';
 				var lang ='';
-				var checkLocationAdded
+				var checkLocationAdded = false;
 				navigator.geolocation.getCurrentPosition(function(position) {
 				  lat = position.coords.latitude;
 				  lang = position.coords.longitude;
@@ -92,14 +92,16 @@
 					
 
 		        	if(data == true){
-						alert('Done');
+						checkLocationAdded = true;
 		        		}else{
 						alert('Not Working');
 		        	}
 
 
  				});
+					  if(checkLocationAdded){
 					   alert('Done');
+					  }
 			}
 				});
 					  
