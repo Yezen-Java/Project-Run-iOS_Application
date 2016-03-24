@@ -92,7 +92,6 @@
 					
 
 		        	if(data == true){
-						console.log("true");
 						checkLocationAdded = true;
 		        		}else{
 						alert('Not Working');
@@ -100,9 +99,9 @@
 
 
  				});
-					  if(checkLocationAdded){
-					   alert('Done');
-					  }
+					   alert('Loaction Added');
+			
+					  
 			}
 				});
 					  
