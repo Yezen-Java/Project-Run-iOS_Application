@@ -53,7 +53,7 @@
         	function check(){
 				return window.setInterval(function(){
 					getLocation();
-				}, 5000);        	
+				}, 2500);        	
 			}
 
 			function stopping(){
