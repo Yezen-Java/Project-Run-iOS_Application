@@ -17,13 +17,11 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	 <script src="js/bootstrap-image-gallery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.18.2/js/blueimp-gallery.min.js"></script>
 	      
 <!--	  IMGES STUFF-->
 
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.18.2/css/blueimp-gallery.min.css"> -->
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">  
-		  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.18.2/css/blueimp-gallery.min.css">		  
 
 	  
 <!--	  IMAGES STUFF-->
