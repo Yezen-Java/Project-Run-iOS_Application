@@ -77,6 +77,7 @@
 				var locationsName = document.getElementById("LoactionName").value;
 				var lat ='';
 				var lang ='';
+				var checkLocationAdded
 				navigator.geolocation.getCurrentPosition(function(position) {
 				  lat = position.coords.latitude;
 				  lang = position.coords.longitude;
@@ -89,12 +90,11 @@
 
 				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
 		        	if(data == true){
-						alert('Working');
+						checkLocationAdded = true;
+						alert('Done');
 		        		}else{
-		        		console.log('location adding error');
 						alert('Not Working');
 		        	}
-					 						alert('Working');
 
 
  				});
