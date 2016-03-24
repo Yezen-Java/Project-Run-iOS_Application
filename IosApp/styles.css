@@ -92,7 +92,7 @@ font-size: 10px;
 /*testing end */
 
 /*the gallery pictures can be set here */
-.mainGalleryBackground .galleryPictures{
+.galleryPictures{
 	margin-top: 20px;
 	margin-bottom: 10px;
 	width: 200px;
