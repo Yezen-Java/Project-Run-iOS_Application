@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-   	<script src="jquery.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet">
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	 
 
@@ -18,14 +18,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 	 <script src="js/bootstrap-image-gallery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
 	      
 <!--	  IMGES STUFF-->
 
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">  
-	  
+	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">  
+		  
 
 	  
 <!--	  IMAGES STUFF-->
