@@ -114,6 +114,7 @@ font-size: 10px;
 	margin-left: auto;
 	border-radius: 5%;
 	box-shadow: 1px 1px 1px black;
+	background-color: black;
 }
 
 .allButtons {
