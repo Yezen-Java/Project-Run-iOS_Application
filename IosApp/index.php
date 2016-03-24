@@ -456,7 +456,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 
 	 	  <center>
 <center class="topHeader"><button id="btnGallery" onclick="show('Page2');"  class="btn btn-primary"><p class="HomePageText">Rooms</p></button>
-<label class="topHospitalNameText" >Royal Brompton Hospital</label> 	  
+<label class="topHospitalNameText" >Gallery</label> 	  
 			  
 			  </center>
 	
