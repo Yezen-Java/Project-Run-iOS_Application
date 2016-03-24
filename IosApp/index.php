@@ -581,7 +581,7 @@ OLD CODE END
 
     						<div class="form-group">
 								<input type="text" class="form-control" id="username" placeholder="Username">
-								<input type="text" class="form-control" id="Password" placeholder="Password">
+								<input type="password" class="form-control" id="Password" placeholder="Password">
 						
 								<button type="button" class="btn btn-success" onclick="userlogin();">Log In</button>
 								<button type="button" class="btn btn-primary" onclick="show('Page1');">Go Back</button>
