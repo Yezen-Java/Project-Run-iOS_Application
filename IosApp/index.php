@@ -621,7 +621,9 @@ OLD CODE END
     </div>
     <div>
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
-		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add Location</button>
+		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add</button>
+		<button type="button" class="btn btn-primary" onclick="show('Page4');">Go Back</button>
+
     </div>
     <div id ="LocationInsertedAlert">
     	
