@@ -131,9 +131,7 @@
 			if(locations.length == 1 && isClosed){
 				getMediaTour(id);
 			} else if (locations.length>1){
-				$('#myModal').on('shown.bs.modal', function (e) {
-					return;
-				});
+				
 				$('#myModal').on('hidden.bs.modal', function (e) {
 					isClosed = true;
 				});
@@ -146,6 +144,9 @@
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
+				$('#myModal').on('shown.bs.modal', function (e) {
+					return;
+				});
 			}
 
 			}
