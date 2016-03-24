@@ -85,15 +85,15 @@
 				  if (locationsName !='') {
 
 				 	  	console.log('Test'+locationsName+lat+' '+ lang);
-					  	Alert('Location added');
+					  	
 
 				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
 		        	if(data == true){
 		        	
-		        		
+		        		alert('Working');
 		        		}else{
 		        		console.log('location adding error');
-
+						alert('Not Working');
 		        	}
 
  				});
