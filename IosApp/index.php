@@ -89,14 +89,7 @@
 					  	
 
 				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
-		        	if(data == true){
-						checkLocationAdded = true;
-						alert('Done');
-		        		}else{
-						alert('Not Working');
-		        	}
-
-
+					 alert('Done');
  				});
 			}
 				});
