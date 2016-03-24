@@ -586,9 +586,7 @@ OLD CODE END
 								<button type="button" class="btn btn-success" onclick="userlogin();">Log In</button>
 								<button type="button" class="btn btn-primary" onclick="show('Page1');">Go Back</button>
 						
-								<div id="AlertDiv" class="alert alert-danger">
-							
-	                    		<strong>Alert!</strong>Invalid Password</div>
+								
 			
 							</div>
 						</div>
@@ -625,7 +623,9 @@ OLD CODE END
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
 		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add Location</button>
     </div>
- 
+    <div id ="LocationInsertedAlert">
+    	
+    </div>
 	
 	</div>	
 
