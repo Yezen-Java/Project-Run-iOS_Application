@@ -21,8 +21,6 @@
 	      
 <!--	  IMGES STUFF-->
 
-	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">  
 		  
 
 	  
