@@ -41,6 +41,7 @@ public function InsertLocationCoordinates($locationName,$latitude,$longitude,$db
 	$results = pg_execute($dbconn,"query",array($locationName,$latitude,$longitude));
 
 	if (pg_affected_rows($results)>0) {
+		alert('Its working');
 		return true;
 	}
 
