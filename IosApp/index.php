@@ -625,9 +625,7 @@ OLD CODE END
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
 		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add Location</button>
     </div>
-    <div id ="LocationInsertedAlert">
-    	
-    </div>
+  
 	
 	</div>	
 
