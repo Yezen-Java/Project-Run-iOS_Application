@@ -77,7 +77,7 @@ class TourClass
 			    //when the user click and expand specific pic
 			 $htmlTag = $htmlTag."<div id ='ImageGalleryDiv' class='mainGalleryBackground'>
 				<a  href='$link' title='$description' data-gallery>
-        		$Tag src='$link' alt='Orange' class='galleryPictures'$Close</a></div>";
+        		$Tag src='$link' alt='Orange' class='galleryPictures' class='img-thumbnail' $Close</a></div>";
 
          }
 

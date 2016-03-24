@@ -451,7 +451,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
 <!--		end of gallery page -->
 		
     </div>
-<!--=======================================SECOND PAGE END ============================================--><!--======================================THIRD PAGE START ============================================-->
+<!--==================================SECOND PAGE END ============================================--><!--======================================THIRD PAGE START =======================================-->
  <div id="Page3" class="page" style="display:none">
 
 	 	  <center>
