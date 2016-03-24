@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -16,7 +17,6 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 	 <script src="js/bootstrap-image-gallery.min.js"></script>
 	      
 <!--	  IMGES STUFF-->
@@ -28,8 +28,7 @@
 	  
 <!--	  IMAGES STUFF-->
 	  
-	  <link rel="stylesheet" href="css/style.css">
-	  	  <link href="styles.css" rel="stylesheet">
+	  <link href="styles.css" rel="stylesheet">
 	   	
 	  <style type='text/css'>
 				span {
@@ -131,6 +130,9 @@
 			if(locations.length == 1 && isClosed){
 				getMediaTour(id);
 			} else if (locations.length>1){
+				$('#myModal').on('shown.bs.modal', function (e) {
+					return;
+				});
 				
 				$('#myModal').on('hidden.bs.modal', function (e) {
 					isClosed = true;
@@ -144,9 +146,6 @@
 					$("#multipleLocations").append(item);
 				};
 				$("#chooseLocations").modal('show');
-				$('#myModal').on('shown.bs.modal', function (e) {
-					return;
-				});
 			}
 
 			}
