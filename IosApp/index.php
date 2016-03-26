@@ -91,15 +91,18 @@
 						getMyLocation();				
 					},2500);				
 				}
-
-				addLocationToDb(currentLat,currentLang);
 			}
 
-			function addLocationToDb(lat,lang){
+			function manager(){
+				locationCheck();
+				addLocationToDb();
+			}
+
+			function addLocationToDb(){
 				var locationsName = document.getElementById("LoactionName").value;
 				if (locationsName !='') {
 				 	console.log('Test'+locationsName+lat+' '+ lang);
-				$.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
+				$.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:currentLat,longitude:currentLang}, function(data){
 				
 		        	if(data == true){
 						checkLocationAdded = true;
@@ -632,7 +635,7 @@ OLD CODE END
     </div>
     <div>
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
-		<button type="button" class="btn btn-success" onclick="locationCheck();">Add</button>
+		<button type="button" class="btn btn-success" onclick="manager();">Add</button>
 		<button type="button" class="btn btn-primary" onclick="show('Page4');">Go Back</button>
 
     </div>
