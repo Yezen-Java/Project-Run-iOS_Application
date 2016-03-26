@@ -74,49 +74,43 @@
 			}
 
 			function getMyLocation(){
-				var locationsName = document.getElementById("LoactionName").value;
-				var lat ='';
-				var lang ='';
-				var checkLocationAdded = false;
-				var arrLat = [];
-				var arrLang = [];
 				navigator.geolocation.getCurrentPosition(function(position) {
-					for (var i = 0; i < 5; i++) {
-						setTimeout(function() {
-					    }, 1000);    
-					    console.log(position.coords.latitude);
-				        console.log(position.coords.longitude);
-						lat =+ position.coords.latitude;
-						lang =+ position.coords.longitude;
-					};
+				    console.log(position.coords.latitude);
+			        console.log(position.coords.longitude);
+					currentLat =+ position.coords.latitude;
+					currentLang =+ position.coords.longitude;	   
+				});		  
+			}
 
-				    lat = lat/5;
-				    lang = lang/5;
-				    console.log(lat);
-				    console.log(lang);
+			var currentLat = 0;
+			var currentLang = 0;
 
-				    if (locationsName !='') {
+			function location(){
+				for (var i = 0; i < 5; i++) {
+					setTimeout(function(){ 
+						getMyLocation();				
+					},500);				
+				}
 
-				 	  	console.log('Test'+locationsName+lat+' '+ lang);
-					  	
+				addLocationToDb(currentLat,currentLang);
+			}
 
-				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
-					
-
+			function addLocationToDb(lat,lang){
+				var locationsName = document.getElementById("LoactionName").value;
+				if (locationsName !='') {
+				 	console.log('Test'+locationsName+lat+' '+ lang);
+				$.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
+				
 		        	if(data == true){
 						checkLocationAdded = true;
-		        		}else{
+		        	}else{
 						alert('Not Working');
 		        	}
-
-
  				});
-					   alert('Loaction Added');
-			
+				alert('Loaction Added');
 					  
-			}
-				});
-					  
+				}
+
 			}
 
 			function showPosition(position) {
