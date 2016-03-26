@@ -89,7 +89,7 @@
 				for (var i = 0; i < 5; i++) {
 					window.setTimeout(function(){ 
 						getMyLocation();				
-					},500);				
+					},2500);				
 				}
 
 				addLocationToDb(currentLat,currentLang);
