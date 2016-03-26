@@ -74,46 +74,37 @@
 			}
 
 			function getMyLocation(){
-				navigator.geolocation.getCurrentPosition(function(position) {
-				    console.log(position.coords.latitude);
-			        console.log(position.coords.longitude);
-					currentLat =+ position.coords.latitude;
-					currentLang =+ position.coords.longitude;	   
-				});		  
-			}
-
-			var currentLat = 0;
-			var currentLang = 0;
-
-			function locationCheck(){
-				for (var i = 0; i < 5; i++) {
-					window.setTimeout(function(){ 
-						getMyLocation();				
-					},3500);				
-				}
-			}
-
-			function manager(){
-				locationCheck();
-				addLocationToDb();
-			}
-
-			function addLocationToDb(){
 				var locationsName = document.getElementById("LoactionName").value;
-				if (locationsName !='') {
-				 	console.log('Test'+locationsName+lat+' '+ lang);
-				$.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:currentLat,longitude:currentLang}, function(data){
-				
+				var lat ='';
+				var lang ='';
+				var checkLocationAdded = false;
+				navigator.geolocation.getCurrentPosition(function(position) {
+				  lat = position.coords.latitude;
+				  lang = position.coords.longitude;
+				  console.log(lat);
+				  console.log(lang);
+				  if (locationsName !='') {
+
+				 	  	console.log('Test'+locationsName+lat+' '+ lang);
+					  	
+
+				 $.post('database/AddLocationCoordinates.php',{LocationName:locationsName,latitude:lat,longitude:lang}, function(data){
+					
+
 		        	if(data == true){
 						checkLocationAdded = true;
-		        	}else{
+		        		}else{
 						alert('Not Working');
 		        	}
- 				});
-				alert('Loaction Added');
-					  
-				}
 
+
+ 				});
+					   alert('Loaction Added');
+			
+					  
+			}
+				});
+					  
 			}
 
 			function showPosition(position) {
@@ -635,7 +626,7 @@ OLD CODE END
     </div>
     <div>
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
-		<button type="button" class="btn btn-success" onclick="manager();">Add</button>
+		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add</button>
 		<button type="button" class="btn btn-primary" onclick="show('Page4');">Go Back</button>
 
     </div>
