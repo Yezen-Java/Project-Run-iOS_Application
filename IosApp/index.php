@@ -87,7 +87,7 @@
 
 			function location(){
 				for (var i = 0; i < 5; i++) {
-					setTimeout(function(){ 
+					window.setTimeout(function(){ 
 						getMyLocation();				
 					},500);				
 				}
@@ -632,7 +632,7 @@ OLD CODE END
     </div>
     <div>
     	<input type="text" class="form-control" id="LoactionName" placeholder="Enter Location Name">
-		<button type="button" class="btn btn-success" onclick="getMyLocation();">Add</button>
+		<button type="button" class="btn btn-success" onclick="location();">Add</button>
 		<button type="button" class="btn btn-primary" onclick="show('Page4');">Go Back</button>
 
     </div>
