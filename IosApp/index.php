@@ -84,7 +84,7 @@
 					for (var i = 0; i < 5; i++) {
 						setTimeout(getMyLocation, 1000);
 						lat += position.coords.latitude;
-						lang += aposition.coords.longitude;
+						lang += position.coords.longitude;
 					};
 				    lat = lat/5;
 				    lang = lang/5;
