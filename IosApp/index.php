@@ -455,7 +455,7 @@ At the moment it's only pointing at the gallery page , but we can have multiple 
     </div>
 <!--==================================SECOND PAGE END ============================================--><!--======================================THIRD PAGE START =======================================-->
  <div id="Page3" class="page" style="display:none">
-<center >
+<center class="topHeader">
 <button id="btnGallery" onclick="show('Page2');" class="btn btn-success" style="float: left;"><p class="HomePageText"><span class="glyphicon glyphicon-chevron-left"></span></p></button>
 
 <label class="topHospitalNameText" >Gallery</label> 	  
