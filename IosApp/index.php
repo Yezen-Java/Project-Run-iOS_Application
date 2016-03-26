@@ -82,7 +82,6 @@
 				var arrLang = [];
 				navigator.geolocation.getCurrentPosition(function(position) {
 					for (var i = 0; i < 5; i++) {
-						setTimeout(getMyLocation, 1000);
 						lat += position.coords.latitude;
 						lang += position.coords.longitude;
 					};
