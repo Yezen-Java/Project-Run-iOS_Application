@@ -78,12 +78,19 @@
 				var lat ='';
 				var lang ='';
 				var checkLocationAdded = false;
+				var arrLat = [];
+				var arrLang = [];
 				navigator.geolocation.getCurrentPosition(function(position) {
-				  lat = position.coords.latitude;
-				  lang = position.coords.longitude;
-				  console.log(lat);
-				  console.log(lang);
-				  if (locationsName !='') {
+					for (var i = 0; i < 5; i++) {
+						setTimeout(getMyLocation, 1000);
+						lat += position.coords.latitude;
+						lang += aposition.coords.longitude;
+					};
+				    lat = lat/5;
+				    lang = lang/5;
+				    console.log(lat);
+				    console.log(lang);
+				    if (locationsName !='') {
 
 				 	  	console.log('Test'+locationsName+lat+' '+ lang);
 					  	
