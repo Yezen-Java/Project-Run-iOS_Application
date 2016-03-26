@@ -19,10 +19,6 @@ border-bottom:1px solid white;
 	
 }
 
-#btnGallery{
-	width: 5px;
-}
-
 
 
 .topText {
@@ -364,7 +360,7 @@ margin-right: 10px;
 }
 
 #btnGallery {
-margin-right: 10px;
+margin-left: 10px;
 }
 
 #testDiv {
