@@ -82,13 +82,16 @@
 				var arrLang = [];
 				navigator.geolocation.getCurrentPosition(function(position) {
 					for (var i = 0; i < 5; i++) {
-						lat += position.coords.latitude;
+					    console.log(position.coords.latitude);
+				        console.log(position.coords.longitude);
+						lat =+ position.coords.latitude;
 						lang =+ position.coords.longitude;
 					};
-					console.log(lat);
-				    console.log(lang);
+
 				    lat = lat/5;
 				    lang = lang/5;
+				    console.log(lat);
+				    console.log(lang);
 
 				    if (locationsName !='') {
 
