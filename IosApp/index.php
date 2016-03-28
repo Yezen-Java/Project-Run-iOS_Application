@@ -120,7 +120,7 @@
 			    var name = obj.name;
 			    var distance = Math.sqrt(Math.pow(clat - lat, 2) + Math.pow(clang - lang, 2));
 			    console.log(distance);
-			    if (distance < 0.00005){
+			    if (distance < 0.00006){
 			    	locations.push(id);
 					names.push(name);
 			    	console.log(id);
